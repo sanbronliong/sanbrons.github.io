@@ -1,304 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Menu</title>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mdb.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body data-page="menu">
+</head>
+
+<body data-page="menu">
     <div>
-
-      <div>
-        <nav class="navbar navbar-default navbar-fixed-top navbar-small">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="bar-1 icon-bar"></span>
-                <span class="bar-2 icon-bar"></span>
-                <span class="bar-3 icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="img/newlogo.png"></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
-              <ul class="nav navbar-nav">
-                    <li><a href="topup.html" style="margin-right:10px">Top Up Here</a></li>
-                    <li class="dropdown myaccountdropdown" style="margin-right:10px">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
-                        <ul class="dropdown-menu myaccountdropdown">
-                            <li><p>Welcome, <b>Adam Smith</b><br>
-                                Credit Value: <b>0</b></p>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li><p>Area: <b>Federal Territory Kuala Lumpur</b></p></li>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">My Order</a></li>
-                            <li><a href="#">Change Password</a></li>
-                            <li><a href="#">Log Out</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="cart-btn" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <span class="count">2</span></a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </nav>
-        <div class="subnav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 sidelabel" style="padding-top: 20px;padding-left: 40px;">
-                        Choose Date:
+        <div>
+            <nav class="navbar navbar-default navbar-fixed-top navbar-small">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="bar-1 icon-bar"></span>
+                            <span class="bar-2 icon-bar"></span>
+                            <span class="bar-3 icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img src="img/newlogo.png"></a>
                     </div>
-                    <div class="col-md-8">
-                        <div class="dates">
-                            <center>
-                            <span class="date datenow"><span class="dayname">FRI</span><span class="daynumber">14</span><span class="monthname">Jul</span></span>
-                            <span class="date"><span class="dayname">FRI</span><span class="daynumber">14</span><span class="monthname">Jul</span></span>
-                            <span class="date"><span class="dayname">FRI</span><span class="daynumber">14</span><span class="monthname">Jul</span></span>
-                            <span class="date"><span class="dayname">FRI</span><span class="daynumber">14</span><span class="monthname">Jul</span></span>
-                            <span class="date"><span class="dayname">FRI</span><span class="daynumber">14</span><span class="monthname">Jul</span></span>
-                            <span class="date"><span class="dayname">FRI</span><span class="daynumber">14</span><span class="monthname">Jul</span></span>
-                            </center>
-
+                    <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
+                        <ul class="nav navbar-nav">
+                            <li><a href="topup.html" style="margin-right:10px">Top Up Here</a></li>
+                            <li class="dropdown myaccountdropdown" style="margin-right:10px">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+                                <ul class="dropdown-menu myaccountdropdown">
+                                    <li>
+                                        <p>Welcome, <b>Adam Smith</b><br> Credit Value: <b>0</b></p>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <p>Area: <b>Federal Territory Kuala Lumpur</b></p>
+                                    </li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">My Order</a></li>
+                                    <li><a href="changepassword.html">Change Password</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="cart-btn" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <span class="count">2</span></a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+            <div class="subnav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 sidelabel" style="padding-top: 20px;padding-left: 40px;">
+                            Choose Date:
+                        </div>
+                        <div class="col-md-8">
+                            <div class="dates">
+                                <div class="date datenow"><span class="dayname">FRI</span><span class="daynumber">1</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">2</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">3</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">4</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">5</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">6</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">7</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">8</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">9</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">10</span><span class="monthname">Jul</span></div>
+                                <div class="date"><span class="dayname">FRI</span><span class="daynumber">11</span><span class="monthname">Jul</span></div>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-
-
-
-                <div class="row hide">
-                    <div class="col-md-2 sidelabel">
-                        Pick Location:
-                    </div>
-                    <div class="col-md-10">
-                        <select class="form-control">
+                    <div class="row hide">
+                        <div class="col-md-2 sidelabel">
+                            Pick Location:
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-control">
                             <option value="" selected disabled>State</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <select class="form-control">
+                            <select class="form-control">
                             <option value="" selected disabled>City</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <select class="form-control" >
+                            <select class="form-control">
                             <option value="" selected disabled>Collection Point</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
                         </select>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="container content">
-            <div class="row">
-                <div class="col-md-12">
-                    <center>
-                        <ul class="nav nav-pills" style="display:inline-block;padding-bottom:15px;">
-                            <li class="active"><a href="#">Lunch</a></li>
-                            <li><a href="#">Dinner</a></li>
-                        </ul>
-                    </center>
-                </div>
-
-                <div class="col-md-2 foodcategory">
-                    
-                    <ul class="list">
-                        <li class="active">All Food</li>
-                        <li>Chinese</li>
-                        <li>Japanese</li>
-                        <li>Western</li>
-                        <li>Thai</li>
-                        <li>Malay</li>
-                        <li>Indian</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-7 foodmenu">
-                    <div class="menubox">
-                        <img class="image" src="img/menu-sample.png">
-                        <div class="content">
-                            <h4 class="title">Kung Fu Chicken</h4>
-                            <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable and</p>
-                            <p class="price">RM7.00</p>
-                            <p class="stock">20 left</p><br>
-                            <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
-                            <input class="form-control" type="number" value="1" min="1" max="10">
                         </div>
                     </div>
-                    <div class="menubox">
-                        <img class="image" src="img/menu-sample.png">
-                        <div class="content">
-                            <h4 class="title">Kung Fu Chicken</h4>
-                            <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable and</p>
-                            <p class="price">RM7.00</p>
-                            <p class="stock">20 left</p><br>
-                            <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
-                            <input class="form-control" type="number" value="1" min="1" max="10">
-                        </div>
-                    </div>
-                    <div class="menubox">
-                        <img class="image" src="img/menu-sample.png">
-                        <div class="content">
-                            <h4 class="title">Kung Fu Chicken</h4>
-                            <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable and</p>
-                            <p class="price">RM7.00</p>
-                            <p class="stock">20 left</p><br>
-                            <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
-                            <input class="form-control" type="number" value="1" min="1" max="10">
-                        </div>
-                    </div>
-                    <div class="menubox">
-                        <img class="image" src="img/menu-sample.png">
-                        <div class="content">
-                            <h4 class="title">Kung Fu Chicken</h4>
-                            <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable and</p>
-                            <p class="price">RM7.00</p>
-                            <p class="stock">20 left</p><br>
-                            <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
-                            <input class="form-control" type="number" value="1" min="1" max="10">
-                        </div>
-                    </div>
-                    <div class="menubox">
-                        <img class="image" src="img/menu-sample.png">
-                        <div class="content">
-                            <h4 class="title">Kung Fu Chicken</h4>
-                            <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable and</p>
-                            <p class="price">RM7.00</p>
-                            <p class="stock">20 left</p><br>
-                            <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
-                            <input class="form-control" type="number" value="1" min="1" max="10">
-                        </div>
-                    </div>
-                    <div class="menubox">
-                        <img class="image" src="img/menu-sample.png">
-                        <div class="content">
-                            <h4 class="title">Kung Fu Chicken</h4>
-                            <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable and</p>
-                            <p class="price">RM7.00</p>
-                            <p class="stock">20 left</p><br>
-                            <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
-                            <input class="form-control" type="number" value="1" min="1" max="10">
-                        </div>
-                    </div>
-                                                
-                </div>
-                <div class="col-md-3 yourorders">
-                    <div class="box">
-                        <h4 class="items">3 items</h4>
-                        <h4 class="title">Your Orders</h4>
-                        <p class="desc"><b>Collection Detail</b><br>Date : Wed , 07 Jun 2017<br>
-                        Point : Kuchai Avenue </p>
-                        <div class="divider"></div>
-                        <ul class="listorder">
-                            <li><span class="countorder">2 x </span><span class="ordername">Honey Mustard Chicken Chop</span><br><span class="orderprice">RM14.00</span>
-                            <div class="buttons">
-                                <span>-</span>
-                                <span>+</span>
-                                <span>x</span>
-                            </div>
-                            </li>
-                            <li><span class="countorder">2 x </span><span class="ordername">Honey Mustard Chicken Chop</span><br><span class="orderprice">RM14.00</span>
-                            <div class="buttons">
-                                <span>-</span>
-                                <span>+</span>
-                                <span>x</span>
-                            </div>
-                            </li>
-                            <li><span class="countorder">2 x </span><span class="ordername">Honey Mustard Chicken Chop</span><br><span class="orderprice">RM14.00</span>
-                            <div class="buttons">
-                                <span>-</span>
-                                <span>+</span>
-                                <span>x</span>
-                            </div>
-                            </li>
-                        </ul>
-                        <div class="divider"></div>
-                        <h4 class="totalprice">RM28.00</h4>
-                        <h4 class="totaltext">TOTAL</h4>
-                    </div>
-                    <button class="btn btn-custom btn-orange noshadow btn-checkout"><span class="glyphicon glyphicon-shopping-cart"></span> Check Out</button>
                 </div>
             </div>
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <center>
+                            <ul class="nav nav-pills" style="display:inline-block;padding-bottom:15px;">
+                                <li class="active"><a href="#">Lunch<br><span style="font-size:12px">12 noon - 2 pm</span></a></li>
+                                <li><a href="#">Dinner<br><span  style="font-size:12px">6 pm - 8 pm</span></a></li>
+                            </ul>
+                        </center>
+                    </div>
+                    <div class="col-md-2 foodcategory">
+                        <ul class="list">
+                            <li class="active">All Food</li>
+                            <li>Chinese</li>
+                            <li>Japanese</li>
+                            <li>Western</li>
+                            <li>Thai</li>
+                            <li>Malay</li>
+                            <li>Indian</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7 foodmenu">
+                        <div class="menubox">
+                            <img class="image" src="img/menu-sample.png">
+                            <div class="content">
+                                <h4 class="title">Kung Fu Chicken</h4>
+                                <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable
+                                    and
+                                </p>
+                                <p class="price">RM7.00</p>
+                                <p class="stock">20 left</p><br>
+                                <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
+                                <input class="form-control" type="number" value="1" min="1" max="10">
+                            </div>
+                        </div>
+                        <div class="menubox">
+                            <img class="image" src="img/menu-sample.png">
+                            <div class="content">
+                                <h4 class="title">Kung Fu Chicken</h4>
+                                <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable
+                                    and
+                                </p>
+                                <p class="price">RM7.00</p>
+                                <p class="stock">20 left</p><br>
+                                <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
+                                <input class="form-control" type="number" value="1" min="1" max="10">
+                            </div>
+                        </div>
+                        <div class="menubox">
+                            <img class="image" src="img/menu-sample.png">
+                            <div class="content">
+                                <h4 class="title">Kung Fu Chicken</h4>
+                                <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable
+                                    and
+                                </p>
+                                <p class="price">RM7.00</p>
+                                <p class="stock">20 left</p><br>
+                                <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
+                                <input class="form-control" type="number" value="1" min="1" max="10">
+                            </div>
+                        </div>
+                        <div class="menubox">
+                            <img class="image" src="img/menu-sample.png">
+                            <div class="content">
+                                <h4 class="title">Kung Fu Chicken</h4>
+                                <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable
+                                    and
+                                </p>
+                                <p class="price">RM7.00</p>
+                                <p class="stock">20 left</p><br>
+                                <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
+                                <input class="form-control" type="number" value="1" min="1" max="10">
+                            </div>
+                        </div>
+                        <div class="menubox">
+                            <img class="image" src="img/menu-sample.png">
+                            <div class="content">
+                                <h4 class="title">Kung Fu Chicken</h4>
+                                <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable
+                                    and
+                                </p>
+                                <p class="price">RM7.00</p>
+                                <p class="stock">20 left</p><br>
+                                <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
+                                <input class="form-control" type="number" value="1" min="1" max="10">
+                            </div>
+                        </div>
+                        <div class="menubox">
+                            <img class="image" src="img/menu-sample.png">
+                            <div class="content">
+                                <h4 class="title">Kung Fu Chicken</h4>
+                                <p class="desc">spicy chicken in black sauce with green/red pepper. Top up with stir fry mixed vegetable
+                                    and
+                                </p>
+                                <p class="price">RM7.00</p>
+                                <p class="stock">20 left</p><br>
+                                <button class="btn-custom btn-add"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
+                                <input class="form-control" type="number" value="1" min="1" max="10">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 yourorders">
+                        <div class="yourorders-container">
+                            <div class="box">
+                                <h4 class="items">3 items</h4>
+                                <h4 class="title">Your Orders</h4>
+                                <p class="desc"><b>Collection Detail</b><br>Date : Wed , 07 Jun 2017<br> Point : Kuchai Avenue </p>
+                                <div class="divider"></div>
+                                <ul class="listorder">
+                                    <li><span class="countorder">2 x </span><span class="ordername">Honey Mustard Chicken Chop</span><br><span
+                                            class="orderprice">RM14.00</span>
+                                        <div class="buttons">
+                                            <span>-</span>
+                                            <span>+</span>
+                                            <span>x</span>
+                                        </div>
+                                    </li>
+                                    <li><span class="countorder">2 x </span><span class="ordername">Honey Mustard Chicken Chop</span><br><span
+                                            class="orderprice">RM14.00</span>
+                                        <div class="buttons">
+                                            <span>-</span>
+                                            <span>+</span>
+                                            <span>x</span>
+                                        </div>
+                                    </li>
+                                    <li><span class="countorder">2 x </span><span class="ordername">Honey Mustard Chicken Chop</span><br><span
+                                            class="orderprice">RM14.00</span>
+                                        <div class="buttons">
+                                            <span>-</span>
+                                            <span>+</span>
+                                            <span>x</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="divider"></div>
+                                <h4 class="totalprice">RM28.00</h4>
+                                <h4 class="totaltext">TOTAL</h4>
+                            </div>
+                            <button class="btn btn-custom btn-orange noshadow btn-checkout"><span class="glyphicon glyphicon-shopping-cart"></span> Check Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-     </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4 class="heading">vFood360 Station Sdn Bhd</h4>
+                        <p class="desc">J-1-2 Pusat Perdagangan Kuchai<br> Jalan 1/127, <br> Off Jalan Kuchai Lama, <br> 58200 Kuala Lumpur
+                            <br> MALAYSIA
+                        </p>
+                        <p class="desc">Phone: <span>03-7972 4350</span></p>
+                        <p class="desc">Email: <span>enquiry@tagameal.com</span> </p>
+                        <br>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="heading">Customer Service</h4>
+                        <a href="disclaimer.html">Disclaimer</a>
+                        <a href="termsandcondition.html">Terms & Conditions</a>
+                        <a href="privacypolicy.html">Privacy Policy</a>
+                        <a href="index.html#contactus">Contact Us</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="heading">Payments via</h4>
+                        <img class="banner" src="img/payments_img.png">
+                        <br><br>
+                        <h4 class="heading">Social Media</h4>
+                        <a class="icon" href="#"><img src="img/fb_icon.svg"></a>
+                        <a class="icon" href="#"><img src="img/twitter_icon.svg"></a>
+                        <a class="icon" href="#"><img src="img/ig_icon.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mdb.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.dates').slick({
+                    accessibility: true,
+                    arrows: true,
+                    slidesToShow: 8,
+                    slidesToScroll: 8,
+                    centerMode: true,
+                    infinite: false,
+                    initialSlide: 3,
+                    responsive: [{
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 5,
+                                slidesToScroll: 5,
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 4,
+                                slidesToScroll: 4
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3
+                            }
+                        }
+                    ],
+                    prevArrow: '<a class="left carousel-control" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>',
+                    nextArrow: '<a class="right carousel-control" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>'
+                });
+            });
+        </script>
+</body>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="heading">vFood360 Station Sdn Bhd</h4>
-            <p class="desc">J-1-2 Pusat Perdagangan Kuchai<br>
-            Jalan 1/127, <br>
-            Off Jalan Kuchai Lama, <br>
-            58200 Kuala Lumpur <br>
-            MALAYSIA
-            </p>
-            <p class="desc">Phone: <span>03-7972 4350</span></p>
-            <p class="desc">Email: <span>enquiry@tagameal.com</span> </p>
-            <br>
-          </div>
-
-          <div class="col-md-4">
-            <h4 class="heading">Customer Service</h4>
-            <a href="#">Disclaimer</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Contact Us</a>
-            <a href="#">FAQ</a>
-          </div>
-
-          <div class="col-md-3">
-            <h4 class="heading">Payments via</h4>
-            <img class="banner" src="img/payments_img.png">
-            <br><br>
-            <h4 class="heading">Social Media</h4>
-            <a class="icon" href="#"><img src="img/fb_icon.svg"></a>
-            <a class="icon" href="#"><img src="img/twitter_icon.svg"></a>
-            <a class="icon" href="#"><img src="img/ig_icon.svg"></a>
-          </div>
-        </div>
- 
-      </div>
-    </footer>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/mdb.min.js"></script>
-    <script src="js/custom.js"></script>
-
-  </body>
 </html>

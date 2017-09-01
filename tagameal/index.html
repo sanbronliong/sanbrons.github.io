@@ -13,6 +13,8 @@
   <link href="css/custom.css" rel="stylesheet">
   <link href="css/bootstrap-social.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,12 +38,12 @@
               <span class="bar-2 icon-bar"></span>
               <span class="bar-3 icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="img/newlogo.png"></a>
+              <a class="navbar-brand" href="index.html"><img src="img/newlogo.png"></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
             <ul class="nav navbar-nav">
               <li><a href="register.html" style="margin-right:10px">Register</a></li>
-              <li><a class="signin.html" href="#SignIn">Sign in <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+              <li><a class="signin.html" href="signin.html">Sign in <span class="glyphicon glyphicon-arrow-right"></span></a></li>
             </ul>
           </div>
           <!--/.nav-collapse -->
@@ -228,212 +230,120 @@
             </div>
           </div>
           <div class="col-md-10 col-md-offset-1">
-            <div class="carousel slide multi-item-carousel" id="collectionsCarousel">
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="box box-pickup">
-                      <h3 class="place">Kuchai Lama</h3>
-                      <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                      <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                      <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="box box-pickup">
-                      <h3 class="place">Kuchai Lama</h3>
-                      <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                      <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                      <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="box box-pickup">
-                      <h3 class="place">Kuchai Lama 2</h3>
-                      <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                      <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                      <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="box box-pickup">
-                      <h3 class="place">Kuchai Lama 3</h3>
-                      <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                      <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                      <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="box box-pickup">
-                      <h3 class="place">Kuchai Lama 4</h3>
-                      <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                      <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                      <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="box box-pickup">
-                      <h3 class="place">Kuchai Lama 5</h3>
-                      <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                      <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                      <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- add  more items here -->
-
+            <div class="" id="collectionsCarousel">
+              <div class="box box-pickup">
+                <h3 class="place">Kuchai Lama</h3>
+                <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
+                <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
               </div>
-              <a class="left carousel-control" href="#collectionsCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-              <a class="right carousel-control" href="#collectionsCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+              <div class="box box-pickup">
+                <h3 class="place">Kuchai Lama</h3>
+                <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
+                <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
+              </div>
+              <div class="box box-pickup">
+                <h3 class="place">Kuchai Lama</h3>
+                <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
+                <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
+              </div>
+              <div class="box box-pickup">
+                <h3 class="place">Kuchai Lama</h3>
+                <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
+                <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-  </section>
-  <section id="news" style="background:#F5F5F5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="wow fadeInDown">News</h2>
-        </div>
-        <div class="col-md-12">
-          <div class="carousel slide multi-item-carousel" id="newsCarousel">
-            <div class="carousel-inner">
-              <div class="item active">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="box box-news">
-                    <img src="img/bg_jumbotron.jpg">
-                    <h3 class="title">Kuchai Lama 1</h3>
-                    <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                    <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                    <a class="btn btn-narrow no-shadow">Read more</a>
-                  </div>
-                </div>
+    </section>
+    <section id="news" style="background:#F5F5F5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="wow fadeInDown">News</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="carousel slide multi-item-carousel" id="newsCarousel">
+              <div class="box box-news">
+                <img src="img/bg_jumbotron.jpg">
+                <h3 class="title">Kuchai Lama 1</h3>
+                <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
+                <a class="btn btn-narrow no-shadow">Read more</a>
               </div>
-              <div class="item">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="box box-news">
-                    <img src="img/bg_jumbotron.jpg">
-                    <h3 class="title">Kuchai Lama 2</h3>
-                    <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                    <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                    <a class="btn btn-narrow no-shadow">Read more</a>
-                  </div>
-                </div>
+              <div class="box box-news">
+                <img src="img/bg_jumbotron.jpg">
+                <h3 class="title">Kuchai Lama 1</h3>
+                <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
+                <a class="btn btn-narrow no-shadow">Read more</a>
               </div>
-              <div class="item">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="box box-news">
-                    <img src="img/bg_jumbotron.jpg">
-                    <h3 class="title">Kuchai Lama 3</h3>
-                    <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                    <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                    <a class="btn btn-narrow no-shadow">Read more</a>
-                  </div>
-                </div>
+              <div class="box box-news">
+                <img src="img/bg_jumbotron.jpg">
+                <h3 class="title">Kuchai Lama 1</h3>
+                <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
+                <a class="btn btn-narrow no-shadow">Read more</a>
               </div>
-              <div class="item">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="box box-news">
-                    <img src="img/bg_jumbotron.jpg">
-                    <h3 class="title">Kuchai Lama 4</h3>
-                    <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                    <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                    <a class="btn btn-narrow no-shadow">Read more</a>
-                  </div>
-                </div>
+              <div class="box box-news">
+                <img src="img/bg_jumbotron.jpg">
+                <h3 class="title">Kuchai Lama 1</h3>
+                <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
+                <a class="btn btn-narrow no-shadow">Read more</a>
               </div>
-              <div class="item">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="box box-news">
-                    <img src="img/bg_jumbotron.jpg">
-                    <h3 class="title">Kuchai Lama 5</h3>
-                    <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                    <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                    <a class="btn btn-narrow no-shadow">Read more</a>
-                  </div>
-                </div>
+              <div class="box box-news">
+                <img src="img/bg_jumbotron.jpg">
+                <h3 class="title">Kuchai Lama 1</h3>
+                <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
+                <a class="btn btn-narrow no-shadow">Read more</a>
               </div>
-              <div class="item">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="box box-news">
-                    <img src="img/bg_jumbotron.jpg">
-                    <h3 class="title">Kuchai Lama 6</h3>
-                    <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                    <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                    <a class="btn btn-narrow no-shadow">Read more</a>
-                  </div>
-                </div>
-              </div>
-              <!-- add  more items here -->
-              <!-- Example item start:  -->
-              <div class="item">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="box box-news">
-                    <img src="img/bg_jumbotron.jpg">
-                    <h3 class="title">Kuchai Lama 6</h3>
-                    <p class="date">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                    <p class="desc">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                    <a class="btn btn-narrow no-shadow">Read more</a>
-                  </div>
-                </div>
-              </div>
-              <!--  Example item end -->
             </div>
-            <a class="left carousel-control" href="#newsCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-            <a class="right carousel-control" href="#newsCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="contactus" style="background:#F5F5F5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.0817465441398!2d101.68982000817748!3d3.0844633217980144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbb79ad103ad287a!2sKuchai+Business+Park!5e0!3m2!1sen!2s!4v1499264944347"
-            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <section id="contactus" style="background:#F5F5F5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.0817465441398!2d101.68982000817748!3d3.0844633217980144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbb79ad103ad287a!2sKuchai+Business+Park!5e0!3m2!1sen!2s!4v1499264944347"
+              width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-4">
+            <h2 style="text-align:left">Contact Us</h2>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="5" id="message" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-success" style="padding:10px 30px;">Submit</button>
+            </form>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h2 style="text-align:left">Contact Us</h2>
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" rows="5" id="message" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-success" style="padding:10px 30px;">Submit</button>
-          </form>
+      </div>
+    </section>
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe width="100%" src="" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
         </div>
       </div>
     </div>
-  </section>
-  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-body">
-          <iframe width="100%" src="" frameborder="0" allowfullscreen=""></iframe>
-        </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
-      </div>
-    </div>
-  </div>
-  <div class="push"></div>
+    <div class="push"></div>
   </div>
   <footer>
     <div class="container">
@@ -451,7 +361,7 @@
           <a href="disclaimer.html">Disclaimer</a>
           <a href="termsandcondition.html">Terms & Conditions</a>
           <a href="privacypolicy.html">Privacy Policy</a>
-          <a href="#">Contact Us</a>
+          <a href="index.html#contactus">Contact Us</a>
           <a href="faq.html">FAQ</a>
         </div>
         <div class="col-md-3">
@@ -472,32 +382,29 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/mdb.min.js"></script>
   <script src="js/custom.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript">
     $('#carouselHeader').carousel({
       interval: 6000,
-      cycle: true
+      cycle: true,
+      pause: "false"
     });
 
-
-    // Instantiate the Bootstrap carousel
-    $('.multi-item-carousel').carousel({
-      interval: false
-    });
-
-    // for every slide in carousel, copy the next slide's item in the slide.
-    // Do the same for the next, next item.
-    $('.multi-item-carousel .item').each(function () {
-      var next = $(this).next();
-      if (!next.length) {
-        next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
-
-      if (next.next().length > 0) {
-        next.next().children(':first-child').clone().appendTo($(this));
-      } else {
-        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-      }
+    $('#collectionsCarousel, #newsCarousel').slick({
+      accessibility: true,
+      arrows: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      infinite: false,
+      responsive: [{
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }],
+      prevArrow: '<a class="left carousel-control" href="#"><i class="glyphicon glyphicon-chevron-left fa fa-arrow-circle-left"></i></a>',
+      nextArrow: '<a class="right carousel-control" href="#"><i class="glyphicon glyphicon-chevron-right  fa fa-arrow-circle-right"></i></a>'
     });
   </script>
 
