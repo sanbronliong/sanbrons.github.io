@@ -3,9 +3,13 @@ body {
     padding-top:80px;
 }
 
-    body[data-page="landing"] {
-        padding-top: 60px!important;
-    }
+body[data-page="landing"] {
+    padding-top: 60px!important;
+}
+
+.titleHead {
+    color:#009843;
+}
 
 .container {
     padding-right: 20px;
@@ -296,6 +300,12 @@ table.borderless tr td {
     line-height: 32px;
 }
 
+.btn.btn-sm {
+    padding:5px 10px;
+    line-height: 20px;
+    height:auto;
+}
+
 .btn-social {
     padding-left: 65px!important;
 }
@@ -560,20 +570,20 @@ iframe {
     line-height: 20px;
     padding: 10px;
     cursor: pointer;
-    transition: 0.3s ease;
 }
 
 .foodcategory ul.list li.active,
 .settingCategory ul.list li.active{
     background: #009843;
     color: #ffffff;
+    position:relative;
 }
 
 
 .foodcategory ul.list li.active::after,
 .settingCategory ul.list li.active::after {
     width: 0;
-    right: 5px;
+    right: -10px;
     top: 0;
     height: 0;
     position: absolute;
