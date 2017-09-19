@@ -25,111 +25,123 @@
 
 <body data-page="register">
     <div class="wrapper">
-      <nav class="navbar navbar-default navbar-fixed-top navbar-small">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-              aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="bar-1 icon-bar"></span>
-              <span class="bar-2 icon-bar"></span>
-              <span class="bar-3 icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html"><img src="img/newlogo.png"></a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav">
-              <li><a href="register.html" style="margin-right:10px">Register</a></li>
-              <li><a class="signin.html" href="signin.html">Sign in <span class="glyphicon glyphicon-arrow-right"></span></a></li>
-            </ul>
-          </div>
-          <!--/.nav-collapse -->
-        </div>
-      </nav>
-        <div class="container content">
-            <div class="row">
-                <div class="col-md-12 hidden-sm hidden-xs" style="height:20px"></div>
-                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                    <h3 style="margin-bottom:20px">Register</h3>
-                    <form>
-                        <div class="well">
-                            <p>Personal Information</p>
-                            <div class="form-group">
-                                <label class="radio-inline"><input type="radio" name="membertype" selected>Individual</label>
-                                <label class="radio-inline"><input type="radio" name="membertype">Company</label>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-small">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="bar-1 icon-bar"></span>
+                        <span class="bar-2 icon-bar"></span>
+                        <span class="bar-3 icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="img/newlogo.png"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
+                    <ul class="nav navbar-nav">
+                        <li><a href="register.html" style="margin-right:10px">Register</a></li>
+                        <li><a class="signin.html" href="signin.html">Sign in <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div style="    background: url(img/bg_jumbotron.jpg) no-repeat top;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    opacity: 0.5;"></div>
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-12 hidden-sm hidden-xs" style="height:20px"></div>
+            <div class="col-md-10 col-md-offset-1">
+                <form>
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 style="margin-bottom:20px">Register</h3>
+                                <p>Personal Information</p>
+                                <div class="form-group">
+                                    <label class="radio-inline"><input type="radio" name="membertype" selected>Individual</label>
+                                    <label class="radio-inline"><input type="radio" name="membertype">Company</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="fname" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" id="address" placeholder="Address"></textarea>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="fname" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="lname" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="phone" placeholder="Phone Number">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="5" id="address" placeholder="Address"></textarea>
-                            </div>
-                            <br>
-                            <p>Security</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="email" placeholder="Email Address">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password2" placeholder="Confirm Password">
-                            </div>
-                            <br>
-                            <p>Default Collection Point</p>
-                            <div class="form-group">
-                                <select class="form-control">
+                            <div class="col-md-6">
+                                <p>Security</p>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="email" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password2" placeholder="Confirm Password">
+                                </div>
+                                <br>
+                                <p>Default Collection Point</p>
+                                <div class="form-group">
+                                    <select class="form-control">
                                     <option value="" selected disabled>State</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
                                     <option>5</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
                                     <option value="" selected disabled>City</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
                                     <option>5</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
                                     <option value="" selected disabled>Collection Point</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
                                     <option>5</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="6LeYLhgUAAAAAAIDp_sqf0gSgttnTjnhKpLRO5dJ">
-                                    <div style="width: 304px; height: 78px;">
-                                        <div>
-                                            <iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LeYLhgUAAAAAAIDp_sqf0gSgttnTjnhKpLRO5dJ&amp;co=aHR0cHM6Ly93d3cudGFnYW1lYWwuY29tOjQ0Mw..&amp;hl=en-GB&amp;v=r20170712134223&amp;size=normal&amp;cb=p8h0nfaraob4"
-                                                title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no"
-                                                sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation"></iframe>
+                                </div>
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6LeYLhgUAAAAAAIDp_sqf0gSgttnTjnhKpLRO5dJ">
+                                        <div style="width: 304px; height: 78px;">
+                                            <div>
+                                                <iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LeYLhgUAAAAAAIDp_sqf0gSgttnTjnhKpLRO5dJ&amp;co=aHR0cHM6Ly93d3cudGFnYW1lYWwuY29tOjQ0Mw..&amp;hl=en-GB&amp;v=r20170712134223&amp;size=normal&amp;cb=p8h0nfaraob4"
+                                                    title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no"
+                                                    sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation"></iframe>
+                                            </div>
+                                            <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
                                         </div>
-                                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-                                            style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
                                     </div>
                                 </div>
+                                <button class="btn btn-success btn-block" type="submit">Register</button>
                             </div>
                         </div>
-                        <button class="btn btn-success btn-block" type="submit">Register</button>
-                    </form>
-                </div>
+                    </div>
+                    <br>
+                </form>
             </div>
         </div>
-        <div class="push"></div>
+    </div>
+    </div>
+    <div class="push"></div>
     </div>
     <footer>
         <div class="container">

@@ -1,11 +1,17 @@
 $(window).scroll(function () {
-    if ($("nav.navbar").hasClass("navbar-dynamic")) {
+    if ($("body[data-page='landing'] nav.navbar").hasClass("navbar-dynamic")) {
         if ($(window).scrollTop() > 10) {
             $("nav.navbar").addClass("navbar-small");
-            /*$(".navbar-brand img").css({"filter": "none"});*/
+            if ($(window).width() >= 768) {
+                $(".navbar-brand img").attr("src", "img/newlogo.png");
+            }
+
         } else {
             $("nav.navbar").removeClass("navbar-small");
-            /*$(".navbar-brand img").css({"filter": "brightness(100)"});*/
+            if ($(window).width() >= 768) {
+                $(".navbar-brand img").attr("src", "img/newlogo_inv.png");
+            }
+
         }
     }
 
@@ -29,6 +35,9 @@ $(".navbar").on("hide.bs.collapse", function (event) {
 
 /*VIDEO MODAL*/
 $(document).ready(function () {
+    if ($(window).width() < 768) {
+        $(".navbar-brand img").attr("src", "img/newlogo.png");
+    }
     $(function () {
         $(".video").click(function () {
             var theModal = $(this).data("target"),
@@ -48,24 +57,30 @@ $(document).scroll(function () {
     var width = $(".foodcategory").outerWidth() - 20;
     var width2 = $(".yourorders").outerWidth() - 30;
 
-    if (scrollPos >= 200) {
-        $(".foodcategory").addClass("foodcategory-fixed");
-        $(".foodcategory-fixed ul").css({
-            'width': width
-        });
+    if ($("body").data('page') == 'menu') {
+        if ($(window).width > 991) {
+            if (scrollPos >= 200) {
+                $(".foodcategory").addClass("foodcategory-fixed");
+                $(".foodcategory-fixed ul").css({
+                    'width': width
+                });
 
-        $(".yourorders").addClass("yourorders-fixed");
-        $(".yourorders-fixed .yourorders-container").css({
-            'width': width2
-        });
-    } else {
-        $(".foodcategory").removeClass("foodcategory-fixed");
-        $(".foodcategory ul").css({
-            'width': 'initial'
-        });
-        $(".yourorders").removeClass("yourorders-fixed");
-        $(".yourorders .yourorders-container").css({
-            'width': 'initial'
-        });
+                $(".yourorders").addClass("yourorders-fixed");
+                $(".yourorders-fixed .yourorders-container").css({
+                    'width': width2
+                });
+            } else {
+                $(".foodcategory").removeClass("foodcategory-fixed");
+                $(".foodcategory ul").css({
+                    'width': 'initial'
+                });
+                $(".yourorders").removeClass("yourorders-fixed");
+                $(".yourorders .yourorders-container").css({
+                    'width': 'initial'
+                });
+            }
+        }
+
     }
+
 });

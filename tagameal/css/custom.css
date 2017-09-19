@@ -1,7 +1,11 @@
 body {
     font-family: 'Varela Round', sans-serif;
-    padding-top: 80px;
+    padding-top:80px;
 }
+
+    body[data-page="landing"] {
+        padding-top: 60px!important;
+    }
 
 .container {
     padding-right: 20px;
@@ -31,6 +35,13 @@ footer,
     min-height: 369px;
 }
 
+table.borderless tr td:first-child {
+    min-width:200px;
+}
+
+table.borderless tr td {
+    padding:5px 0;
+}
 
 /* HEADER */
 
@@ -149,7 +160,7 @@ footer,
         border: none;
     }
     body {
-        padding-top: 60px;
+        padding-top:80px;
     }
     .navbar .navbar-brand {
         padding: 20px;
@@ -186,7 +197,7 @@ footer,
         margin-bottom: 10px!important;
         margin-right: 10px!important;
     }
-    .order-col button.btn-order {
+    .order-col .btn-order {
         width: 20%!important;
     }
     .navbar-small {
@@ -254,6 +265,10 @@ footer,
     border: 1px solid #dedede;
 }
 
+.form-control.highlight {
+    border:2px solid #009843;
+}
+
 .form-group {
     margin-bottom: 10px;
 }
@@ -268,7 +283,7 @@ footer,
     margin-bottom: 10px;
 }
 
-.order-col button.btn-order {
+.order-col .btn-order {
     width: 100%;
 }
 
@@ -478,7 +493,7 @@ footer a.icon {
     border: none;
 }
 
-#videoModal button.close {
+#videoModal .close {
     background: rgba(255, 255, 255, 0.27);
     text-shadow: none;
     color: #ffffff;
@@ -533,25 +548,30 @@ iframe {
 
 /*food menu*/
 
-.foodcategory ul.list {
+.foodcategory ul.list,
+.settingCategory ul.list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.foodcategory ul.list li {
+.foodcategory ul.list li,
+.settingCategory ul.list li{
     line-height: 20px;
     padding: 10px;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
-.foodcategory ul.list li.active {
+.foodcategory ul.list li.active,
+.settingCategory ul.list li.active{
     background: #009843;
     color: #ffffff;
 }
 
-.foodcategory ul.list li.active::after {
+
+.foodcategory ul.list li.active::after,
+.settingCategory ul.list li.active::after {
     width: 0;
     right: 5px;
     top: 0;
@@ -563,7 +583,8 @@ iframe {
     content: " ";
 }
 
-.foodcategory ul.list li:not(.active):hover {
+.foodcategory ul.list li:not(.active):hover,
+.settingCategory ul.list li:not(.active):hover {
     background: #f5f5f5;
 }
 
@@ -725,13 +746,61 @@ iframe {
     border-bottom: 1px solid #f0f0f0;
 }
 
+.foodmenuCart ul.listorder {
+    margin:0!important;
+}
+
+.foodmenuCart ul.listorder li {
+    min-height:110px;
+    padding:10px 0!important;
+}
+
+.foodmenuCart ul.listorder li .image {
+    width:150px;
+    float:left;
+    margin-right:10px;
+}
+
+.foodmenuCart .buttons {
+    float:none!important;
+    position:relative!important;
+}
+
+.buttons .remove {
+    background: #ff8686;    
+    color: white;
+}
+
+.foodmenuCart .priceper {
+     padding:5px 0;
+    color: #009843;
+}
+
+.yourorders .box ul.listorder2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.yourorders .box ul.listorder2 li {
+    position: relative;
+    padding-bottom:10px;
+}
+
+.yourorders .box ul.listorder li span.ordername {
+    vertical-align:top;
+}
+
 .yourorders .box ul.listorder li span.countorder {
     color: #95989A;
+    vertical-align:top;
 }
 
 .yourorders .box ul.listorder li span.orderprice {
     color: #95989A;
     font-weight: bold;
+    vertical-align:top;
 }
 
 .yourorders .box ul.listorder li div.buttons {
@@ -743,8 +812,8 @@ iframe {
 
 .yourorders .box ul.listorder li div.buttons span {
     padding: 10px;
-    border-radius: 100%;
-    width: 30px;
+    border-radius: 40px;
+    min-width: 30px;
     height: 30px;
     line-height: 10px;
     display: inline-block;
@@ -765,6 +834,12 @@ iframe {
     padding-top: 10px;
     font-weight: bold;
 }
+
+.yourorders .box .totalprice2 {
+    float: right;
+    font-weight: bold;
+}
+
 
 .dates {
     margin: 10px 0;
@@ -833,6 +908,7 @@ ul.myaccountdropdown li p {
     width: 100%;
     top: 0;
     position: absolute;
+    background: black;
 }
 
 .header-carousel {
