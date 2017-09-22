@@ -53,13 +53,22 @@ $(document).ready(function () {
 
 /* STICKY MENU & CART */
 $(document).scroll(function () {
-    var scrollPos = $(document).scrollTop();
+    fixedCol();
+
+});
+
+$(window).resize(function() {
+    fixedCol();
+});
+
+function fixedCol() {
+        var scrollPos = $(document).scrollTop();
     var width = $(".foodcategory").outerWidth() - 20;
     var width2 = $(".yourorders").outerWidth() - 30;
 
     if ($("body").data('page') == 'menu') {
         
-        if ($(window).width() > 991) {
+        if ($(window).width() >= 991) {
             if (scrollPos >= 200) {
                 $(".foodcategory").addClass("foodcategory-fixed");
                 $(".foodcategory-fixed ul").css({
@@ -80,8 +89,16 @@ $(document).scroll(function () {
                     'width': 'initial'
                 });
             }
+        } else if ($(window).width() < 991) {
+                $(".foodcategory").removeClass("foodcategory-fixed");
+                $(".foodcategory ul").css({
+                    'width': 'initial'
+                });
+                $(".yourorders").removeClass("yourorders-fixed");
+                $(".yourorders .yourorders-container").css({
+                    'width': 'initial'
+                });
         }
 
     }
-
-});
+}
