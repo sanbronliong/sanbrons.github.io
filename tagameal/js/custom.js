@@ -58,7 +58,8 @@ $(document).scroll(function () {
     var width2 = $(".yourorders").outerWidth() - 30;
 
     if ($("body").data('page') == 'menu') {
-        if ($(window).width > 991) {
+        
+        if ($(window).width() > 991) {
             if (scrollPos >= 200) {
                 $(".foodcategory").addClass("foodcategory-fixed");
                 $(".foodcategory-fixed ul").css({
