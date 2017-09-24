@@ -250,6 +250,12 @@ table.borderless tr td {
         position: fixed;
         top: 70px;
     }
+    .voucher {
+        min-width:400px;
+        max-width:400px;
+        display:inline-block;
+        margin:0 10px 10px 0!important;
+    }
 }
 
 .heading {
@@ -1087,4 +1093,36 @@ ul.myaccountdropdown li p {
 
 .slick-slide {
     margin: 0 5px!important;
+}
+
+
+/* VOUCHER TOP UP */
+.voucher {
+    background:#acacac;
+    padding:30px 20px;
+    color:white;
+    width:100%;
+    margin:0 0 10px 0;
+    border-radius:5px;
+    opacity:0.5;
+    cursor:pointer;
+    transition:0.2s ease;
+}
+
+.voucher:hover {
+    transform: scale(1.02);
+}
+
+.voucher.active {
+    background:#009843;
+    opacity:1;
+}
+
+.voucher h1 {
+    font-size:52;
+    margin:0;
+}
+
+.voucher span {
+    font-size:14px;
 }

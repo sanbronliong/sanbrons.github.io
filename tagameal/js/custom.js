@@ -49,6 +49,16 @@ $(document).ready(function () {
             });
         });
     });
+
+    //voucher click/update
+    $('.voucher').click(function() {
+        if ($(this).hasClass('active')) {
+            console.log("active");
+        } else {
+            $('.voucherParent').find(".voucher.active").removeClass("active");
+            $(this).addClass("active");
+        }
+    });
 });
 
 /* STICKY MENU & CART */
