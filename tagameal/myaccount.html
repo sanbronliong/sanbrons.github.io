@@ -53,8 +53,8 @@
                                     <li>
                                         <p>Area: <b>Federal Territory Kuala Lumpur</b></p>
                                     </li>
-                                    <li><a href="myaccount.html#myaccount">My Account</a></li>
-                                    <li><a href="myaccount.html#myorder">My Order</a></li>
+                                    <li><a href="myaccount.html">My Account</a></li>
+                                    <li><a href="myorders.html">My Order</a></li>
                                     <li><a href="changepassword.html">Change Password</a></li>
                                     <li><a href="logout.html">Log Out</a></li>
                                 </ul>
@@ -69,76 +69,68 @@
                 <div class="row">
                     <div class="col-md-2 settingCategory">
                         <ul class="list">
-                            <li data-toggle="pill" href="#myaccount" class="active">My Account</li>
-                            <li data-toggle="pill" href="#myorders">My Orders</li>
-                            <li data-toggle="pill" href="#topuphistory">Top Up History</li>
+                            <li class="active"><a href="myaccount.html">My Account</a></li>
+                            <li><a href="myorders.html">My Orders</a></li>
+                            <li><a href="topuphistory.html">Top Up History</a></li>
                         </ul>
                     </div>
                     <div class="col-md-7">
-                        <div class="tab-content">
-                            <div id="myaccount" class="well tab-pane active">
-                                <h3 class="titleHead" style="margin-top:0px">My Account</h3>
-                                <p>Hello , Sanbron In this page you can see the details of your profile in this portal, and
-                                    you can edit it here
-                                </p>
-                                <br>
-                                <button class="btn btn-sm pull-right"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
-                                <h4 class="titleHead">Contact Information</h4>
-                                <table class="borderless">
-                                    <tr>
-                                        <td>Name</td>
-                                        <td>: Sanbron Liong</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phone Number</td>
-                                        <td>: 011-26299400</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Address</td>
-                                        <td>: Selangor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Email Address</td>
-                                        <td>: Adamsmith@gmail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Balance</td>
-                                        <td>: RM 0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Status</td>
-                                        <td>: Verified</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Subscribe to Newsletter</td>
-                                        <td>: No</td>
-                                    </tr>
-                                </table>
-                                <br>
-                                <button class="btn btn-sm pull-right"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
-                                <h4 class="titleHead">Default Collection Point</h4>
-                                <table class="borderless">
-                                    <tr>
-                                        <td>Collection Point</td>
-                                        <td>: Paradigm Mall</td>
-                                    </tr>
-                                    <tr>
-                                        <td>State</td>
-                                        </td>
-                                        <td>: Selangor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>City</td>
-                                        <td>: Petaling Jaya</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div id="myorders" class="well tab-pane">
-                                <h3 class="titleHead" style="margin-top:0px">My Orders</h3>
-                            </div>
-                            <div id="topuphistory" class="well tab-pane">
-                                <h3 class="titleHead" style="margin-top:0px">Top Up History</h3>
-                            </div>
+                        <div>
+                            <h3 class="titleHead" style="margin-top:0px">My Account</h3>
+                            <p>Hello , Sanbron In this page, you can see the details of your profile in this portal, and you
+                                can edit it here
+                            </p>
+                            <br>
+                            <button class="btn btn-sm pull-right"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+                            <h4 class="titleHead">Contact Information</h4>
+                            <table class="borderless">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>: Sanbron Liong</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone Number</td>
+                                    <td>: 011-26299400</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>: Selangor</td>
+                                </tr>
+                                <tr>
+                                    <td>Email Address</td>
+                                    <td>: Adamsmith@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Balance</td>
+                                    <td>: RM 0</td>
+                                </tr>
+                                <tr>
+                                    <td>Status</td>
+                                    <td>: Verified</td>
+                                </tr>
+                                <tr>
+                                    <td>Subscribe to Newsletter</td>
+                                    <td>: No</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <button class="btn btn-sm pull-right"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+                            <h4 class="titleHead">Default Collection Point</h4>
+                            <table class="borderless">
+                                <tr>
+                                    <td>Collection Point</td>
+                                    <td>: Paradigm Mall</td>
+                                </tr>
+                                <tr>
+                                    <td>State</td>
+                                    </td>
+                                    <td>: Selangor</td>
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>: Petaling Jaya</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -185,43 +177,6 @@
         <script src="js/mdb.min.js"></script>
         <script src="js/custom.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.dates').slick({
-                    accessibility: true,
-                    arrows: true,
-                    slidesToShow: 8,
-                    slidesToScroll: 8,
-                    centerMode: true,
-                    infinite: false,
-                    initialSlide: 3,
-                    responsive: [{
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 5,
-                                slidesToScroll: 5,
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 4,
-                                slidesToScroll: 4
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 3
-                            }
-                        }
-                    ],
-                    prevArrow: '<a class="left carousel-control" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>',
-                    nextArrow: '<a class="right carousel-control" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>'
-                });
-            });
-        </script>
 </body>
 
 </html>

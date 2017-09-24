@@ -562,22 +562,36 @@ iframe {
 .settingCategory ul.list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .foodcategory ul.list li,
 .settingCategory ul.list li{
     line-height: 20px;
-    padding: 10px;
     cursor: pointer;
 }
 
+.foodcategory ul.list li a,
+.settingCategory ul.list li a {
+   display:block;
+   padding: 10px;
+}
+
+.foodcategory ul.list li a:hover,
+.settingCategory ul.list li a:hover {
+   text-decoration:none;
+}
+
 .foodcategory ul.list li.active,
-.settingCategory ul.list li.active{
+.settingCategory ul.list li.active,
+.settingCategory ul.list li.active a,
+.foodcategory ul.list li.active a{
     background: #009843;
     color: #ffffff;
     position:relative;
 }
+
+
 
 
 .foodcategory ul.list li.active::after,
