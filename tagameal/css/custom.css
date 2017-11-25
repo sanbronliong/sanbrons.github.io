@@ -155,6 +155,22 @@ table.borderless tr td {
     padding-bottom: 15px;
 }
 
+/* media queries */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .foodmenu {
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+}    
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .foodmenu {
+        grid-template-columns: repeat(3, 1fr)!important;
+    }
+}
+
+
 
 /* big screen */
 
@@ -255,6 +271,11 @@ table.borderless tr td {
         max-width:400px;
         display:inline-block;
         margin:0 10px 10px 0!important;
+    }
+    .foodmenu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
     }
 }
 
@@ -644,19 +665,6 @@ iframe {
     box-sizing: border-box;
 }
 
-.foodmenu {
-    -webkit-column-count: 3;
-    /* Chrome, Safari, Opera */
-    -moz-column-count: 3;
-    /* Firefox */
-    column-count: 3;
-    /* column width */
-    -moz-column-width: 180px;
-    -webkit-column-width: 180px;
-    /* space between columns */
-    -moz-column-gap: 10px;
-    -webkit-column-gap: 10px;
-}
 
 .foodmenu .menubox img.image {
     width: 100%;
