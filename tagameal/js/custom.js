@@ -112,3 +112,31 @@ function fixedCol() {
 
     }
 }
+
+/* set cart amount in badge */
+/* use this function to spawn badge
+exp: setCartBadge(3)
+*/
+function setCartBadge(number, badgeClass = "cartBadge") {
+    var badge = $("button.navbar-toggle");
+    if (!badge.find("." + badgeClass).length) { // spawn cart badge
+        showBadge(badge, number, badgeClass);
+    } else if (badge.find("." + badgeClass).length) { // update badge number
+        hideBadge(badge);
+        showBadge(badge, number, badgeClass);
+    }
+}
+
+function showBadge(badge, number, badgeClass) {
+    badge.append("<span class='"+ badgeClass +"'>" + number + "</span>");
+}
+
+/* use this function to remove badge
+removeBadge()
+*/
+function hideBadge(badge = $("button.navbar-toggle"), badgeClass = "cartBadge") {
+    if (badge.find("." + badgeClass).length) {
+        $("." + badgeClass).remove();
+    }
+    
+}

@@ -145,6 +145,18 @@ table.borderless tr td {
     margin: 12px 15px;
 }
 
+button.navbar-toggle > span.cartBadge {
+    background: red;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
     border: none;
