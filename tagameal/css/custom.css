@@ -250,6 +250,10 @@ button.navbar-toggle > span.cartBadge {
         /*margin-right:10px!important;
         width:48%;
         display:inline-block;*/
+        min-height:350px!important;
+    }
+    .box-news {
+        min-height:350px!important;
     }
     .subnav {
         padding-bottom: 0!important;
@@ -443,6 +447,7 @@ section p.content {
 .box-pickup {
     margin-bottom: 10px;
     margin-right: 0px;
+    min-height:400px!important;
 }
 
 .box-pickup h3.place {
@@ -472,13 +477,14 @@ section p.content {
 
 .box-news {
     margin-bottom: 10px;
+    min-height:400px!important;
 }
 
-.box-news img {
+.box-news img, .box-pickup img {
     width: 100%;
 }
 
-.box-news h3.title {
+.box-news h3.title, .box-pickup h3.place {
     margin: 20px 0 0 0;
     font-size: 18px;
 }
@@ -926,6 +932,14 @@ iframe {
     font-size: 20px;
 }
 
+.text-highlight {
+    color: #009843;
+}
+
+.text-collection {
+    text-align:center;
+    padding-bottom:5px;
+}
 
 /*nav pills */
 

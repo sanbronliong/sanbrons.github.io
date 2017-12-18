@@ -232,24 +232,28 @@
           <div class="col-md-10 col-md-offset-1">
             <div class="" id="collectionsCarousel">
               <div class="box box-pickup">
+                  <img src="img/bg_jumbotron.jpg">
+                <h3 class="place">Kuchai Lama</h3>
+                <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama, No.39 Jalan Kuchai Maju 13 </p>
+                <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
+              </div>
+              <div class="box box-pickup">
+                  <img src="img/bg_jumbotron.jpg">
                 <h3 class="place">Kuchai Lama</h3>
                 <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
                 <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
                 <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
               </div>
               <div class="box box-pickup">
+                  <img src="img/bg_jumbotron.jpg">
                 <h3 class="place">Kuchai Lama</h3>
                 <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
                 <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
                 <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
               </div>
               <div class="box box-pickup">
-                <h3 class="place">Kuchai Lama</h3>
-                <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
-              </div>
-              <div class="box box-pickup">
+                  <img src="img/bg_jumbotron.jpg">
                 <h3 class="place">Kuchai Lama</h3>
                 <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
                 <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
@@ -393,6 +397,7 @@
     $('#collectionsCarousel, #newsCarousel').slick({
       accessibility: true,
       arrows: true,
+      onAfterChange: afterChange,
       slidesToShow: 3,
       slidesToScroll: 3,
       infinite: false,
@@ -406,6 +411,11 @@
       prevArrow: '<a class="left carousel-control" href="#"><i class="glyphicon glyphicon-chevron-left fa fa-arrow-circle-left"></i></a>',
       nextArrow: '<a class="right carousel-control" href="#"><i class="glyphicon glyphicon-chevron-right  fa fa-arrow-circle-right"></i></a>'
     });
+
+    var afterChange = function(slider,i) {
+      var slideHeight = jQuery(slider.$slides[i] ).height();
+      jQuery(slider.$slider ).height( slideHeight);
+    };
   </script>
 
 </html>
