@@ -145,6 +145,18 @@ table.borderless tr td {
     margin: 12px 15px;
 }
 
+button.navbar-toggle > span.cartBadge {
+    background: red;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
     border: none;
@@ -155,10 +167,68 @@ table.borderless tr td {
     padding-bottom: 15px;
 }
 
+.width100 {
+    width:100%!important;
+    float:left;
+    text-align:center;
+    background:#009843;
+    color:white;
+    border:transparent;
+}
+
+.hideMobile {
+    display:none;
+}
+
+.table-topup {
+    border: 1px solid #888;
+}
+
+.table-topup td {
+    width:25%;
+    float:left;
+    text-align:center;
+}
+
+/* media queries */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .foodmenu {
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+}    
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .foodmenu {
+        grid-template-columns: repeat(3, 1fr)!important;
+    }
+}
+
+
 
 /* big screen */
 
 @media (min-width: 768px) {
+    .width100 {
+        width:auto!important;
+        background:transparent;
+        color:black;
+        text-align:left;
+        float:none;
+        border-top: 1px solid #ddd;
+    }
+    .hideMobile {
+        display:table-row!important;
+    }
+    .table-topup {
+        border:none;
+    }
+    .table-topup td {
+        width:auto;
+        text-align:left;
+        float:none;
+    }
     .navbar {
         background: none;
         border: none;
@@ -222,6 +292,10 @@ table.borderless tr td {
         /*margin-right:10px!important;
         width:48%;
         display:inline-block;*/
+        min-height:350px!important;
+    }
+    .box-news {
+        min-height:350px!important;
     }
     .subnav {
         padding-bottom: 0!important;
@@ -255,6 +329,11 @@ table.borderless tr td {
         max-width:400px;
         display:inline-block;
         margin:0 10px 10px 0!important;
+    }
+    .foodmenu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
     }
 }
 
@@ -410,6 +489,7 @@ section p.content {
 .box-pickup {
     margin-bottom: 10px;
     margin-right: 0px;
+    min-height:400px!important;
 }
 
 .box-pickup h3.place {
@@ -439,13 +519,14 @@ section p.content {
 
 .box-news {
     margin-bottom: 10px;
+    min-height:400px!important;
 }
 
-.box-news img {
+.box-news img, .box-pickup img {
     width: 100%;
 }
 
-.box-news h3.title {
+.box-news h3.title, .box-pickup h3.place {
     margin: 20px 0 0 0;
     font-size: 18px;
 }
@@ -568,7 +649,7 @@ iframe {
 .settingCategory ul.list {
     list-style: none;
     padding: 0;
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
 }
 
 .foodcategory ul.list li,
@@ -644,19 +725,6 @@ iframe {
     box-sizing: border-box;
 }
 
-.foodmenu {
-    -webkit-column-count: 3;
-    /* Chrome, Safari, Opera */
-    -moz-column-count: 3;
-    /* Firefox */
-    column-count: 3;
-    /* column width */
-    -moz-column-width: 180px;
-    -webkit-column-width: 180px;
-    /* space between columns */
-    -moz-column-gap: 10px;
-    -webkit-column-gap: 10px;
-}
 
 .foodmenu .menubox img.image {
     width: 100%;
@@ -906,6 +974,14 @@ iframe {
     font-size: 20px;
 }
 
+.text-highlight {
+    color: #009843;
+}
+
+.text-collection {
+    text-align:center;
+    padding-bottom:5px;
+}
 
 /*nav pills */
 
@@ -1126,3 +1202,4 @@ ul.myaccountdropdown li p {
 .voucher span {
     font-size:14px;
 }
+
