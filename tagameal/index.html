@@ -139,30 +139,30 @@
       <section id="whatistagameal">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="wow fadeInDown">What is Tag A Meal?</h2>
+            <h2 class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">What is Tag A Meal?</h2>
             <div class="row problems">
               <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-1 wow fadeInDown">
-                <img src="img/exp.png">
+                <img src="img/longqueue.png">
                 <p>Long Queue</p>
               </div>
-              <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-delay="0.1s">
-                <img src="img/exp.png">
+              <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-delay="0.1s" >
+                <img src="img/timelimit.png">
                 <p>Insufficient time to enjoy food</p>
               </div>
               <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-delay="0.2s">
-                <img src="img/exp.png">
+                <img src="img/foodquality.png">
                 <p>Bad Food Quality</p>
               </div>
-              <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-delay="0.3s">
-                <img src="img/exp.png">
+              <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-delay="0.3s" >
+                <img src="img/latedelivery.png">
                 <p>Late Food Delivery</p>
               </div>
-              <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInDown" data-wow-delay="0.4s">
-                <img src="img/exp.png">
+              <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInDown" data-wow-delay="0.4s" >
+                <img src="img/foodlimit.png">
                 <p>Limited Choices of Food</p>
               </div>
             </div>
-            <p class="content wow fadeIn" data-wow-delay="0.5s">TagAmeal main objective is to solve all your above concerns. Our mission is to provide our customers an easy
+            <p class="content wow fadeIn" data-wow-delay="0.5s" >TagAmeal main objective is to solve all your above concerns. Our mission is to provide our customers an easy
               to order feature, easy and convenient collection of food, time saving, wide varieties of food and not forgetting
               tasty and hygienic food quality. </p>
           </div>
@@ -232,24 +232,28 @@
           <div class="col-md-10 col-md-offset-1">
             <div class="" id="collectionsCarousel">
               <div class="box box-pickup">
+                  <img src="img/bg_jumbotron.jpg">
+                <h3 class="place">Kuchai Lama</h3>
+                <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
+                <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama, No.39 Jalan Kuchai Maju 13 </p>
+                <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
+              </div>
+              <div class="box box-pickup">
+                  <img src="img/bg_jumbotron.jpg">
                 <h3 class="place">Kuchai Lama</h3>
                 <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
                 <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
                 <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
               </div>
               <div class="box box-pickup">
+                  <img src="img/bg_jumbotron.jpg">
                 <h3 class="place">Kuchai Lama</h3>
                 <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
                 <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
                 <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
               </div>
               <div class="box box-pickup">
-                <h3 class="place">Kuchai Lama</h3>
-                <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
-                <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
-                <a class="btn btn-narrow no-shadow"><span class="glyphicon glyphicon-map-marker"></span> Get Directions</a>
-              </div>
-              <div class="box box-pickup">
+                  <img src="img/bg_jumbotron.jpg">
                 <h3 class="place">Kuchai Lama</h3>
                 <p class="area">Federal Territory of Kuala Lumpur , Kuchai Lama</p>
                 <p class="address">No.39 Jalan Kuchai Maju 13, Off Jalan Kuchai Lama</p>
@@ -393,6 +397,7 @@
     $('#collectionsCarousel, #newsCarousel').slick({
       accessibility: true,
       arrows: true,
+      onAfterChange: afterChange,
       slidesToShow: 3,
       slidesToScroll: 3,
       infinite: false,
@@ -406,6 +411,11 @@
       prevArrow: '<a class="left carousel-control" href="#"><i class="glyphicon glyphicon-chevron-left fa fa-arrow-circle-left"></i></a>',
       nextArrow: '<a class="right carousel-control" href="#"><i class="glyphicon glyphicon-chevron-right  fa fa-arrow-circle-right"></i></a>'
     });
+
+    var afterChange = function(slider,i) {
+      var slideHeight = jQuery(slider.$slides[i] ).height();
+      jQuery(slider.$slider ).height( slideHeight);
+    };
   </script>
 
 </html>
