@@ -167,6 +167,7 @@ button.navbar-toggle > span.cartBadge {
     padding-bottom: 15px;
 }
 
+<<<<<<< HEAD
 .width100 {
     width:100%!important;
     float:left;
@@ -190,6 +191,8 @@ button.navbar-toggle > span.cartBadge {
     text-align:center;
 }
 
+=======
+>>>>>>> origin/master
 /* media queries */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
