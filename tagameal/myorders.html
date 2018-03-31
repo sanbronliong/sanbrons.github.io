@@ -31,14 +31,13 @@
             <nav class="navbar navbar-default navbar-fixed-top navbar-small">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                            aria-controls="navbar">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="bar-1 icon-bar"></span>
                             <span class="bar-2 icon-bar"></span>
                             <span class="bar-3 icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html"><img src="img/newlogo.png"></a>
+                        <a class="navbar-brand" href="index.html"><img src="img/newlogo.png"></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
                         <ul class="nav navbar-nav">
@@ -79,7 +78,7 @@
                             <h3 class="titleHead" style="margin-top:0px">My Orders</h3>
                             <p>Hello , Sanbron<br> In this page you can see every status for your transactions.</p>
                             <br>
-                            <table class="table table-hover" style="background:white">
+                            <table class="table table-hover hide" style="background:white">
                                 <thead>
                                     <tr>
                                         <th></th>
@@ -99,12 +98,14 @@
                                     <td>
                                         <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-info-sign"></span> Collection Info</button></td>
                                 </tr>
-                                <tr class="no-hover"><td colspan="6">
-                                    <p class="well" style="color:#9e9e9e">There is no active Collection info for this order.</p>    
-                                </td></tr>
+                                <tr class="no-hover">
+                                    <td colspan="6">
+                                        <p class="well" style="color:#9e9e9e">There is no active Collection info for this order.</p>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td><button class="btn btn-sm btn-success" style="margin-bottom:10px"><span class="glyphicon glyphicon-eye-open"></span> View Order</button><br>
-                                    <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-send"></span> Resend Confirmation Email</button></td>
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-send"></span> Resend Confirmation Email</button></td>
                                     <td>23</td>
                                     <td>5 Sept 2017</td>
                                     <td>Paid</td>
@@ -114,50 +115,97 @@
                                     </td>
                                 </tr>
                             </table>
+
+                            <!-- here test -->
+                            <table class="table table-hover table-topup" style="background:white">
+                                <thead>
+                                    <tr class="hideMobile">
+                                        <th>Order No.</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Total</th>
+                                        <th style="width: 240px;"></th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>23</td>
+                                    <td>5 Sept 2017</td>
+                                    <td>Paid</td>
+                                    <td>RM 35.00</td>
+                                    <td class="width100_2">
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-eye-open"></span> View Order</button>
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-info-sign"></span> Collection Info</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>5 Sept 2017</td>
+                                    <td>Paid</td>
+                                    <td>RM 35.00</td>
+                                    <td class="width100_2">
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-eye-open"></span> View Order</button>
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-info-sign"></span> Collection Info</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>5 Sept 2017</td>
+                                    <td>Paid</td>
+                                    <td>RM 35.00</td>
+                                    <td class="width100_2">
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-eye-open"></span> View Order</button>
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-info-sign"></span> Collection Info</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- test end -->
                             <br>
                             <h4 class="titleHead">Collections Info</h4>
-                            <table class="table table-hover" style="background:white">
+                            <table class="table table-hover  table-topup" style="background:white">
                                 <thead>
-                                    <tr>
-                                        <th>View Order</th>
-                                        <th>Cancel Order</th>
+                                    <tr class="hideMobile">
                                         <th>Order No.</th>
                                         <th>Collection Date</th>
                                         <th>Collection Point</th>
                                         <th>Voucher Serial No.</th>
-                                        <th>Print Voucher</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tr>
-                                    <td>1.</td>
-                                    <td>23</td>
                                     <td>24</td>
                                     <td>12 Sept 2017</td>
                                     <td>Paradigm Mall</td>
                                     <td>312413</td>
-                                    <td><button class="btn btn-sm"><span class="glyphicon glyphicon-print"></span></button></td>
+                                    <td class="width100_2">
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-eye-open"></span> View Order</button>
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-print"></span> Print</button>
+                                        <button class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-remove"></span> Cancel Order</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1.</td>
-                                    <td>23</td>
                                     <td>24</td>
                                     <td>12 Sept 2017</td>
                                     <td>Paradigm Mall</td>
                                     <td>312413</td>
-                                    <td><button class="btn btn-sm"><span class="glyphicon glyphicon-print"></span></button></td>
+                                    <td class="width100_2">
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-eye-open"></span> View Order</button>
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-print"></span> Print</button>
+                                        <button class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-remove"></span> Cancel Order</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1.</td>
-                                    <td>23</td>
                                     <td>24</td>
                                     <td>12 Sept 2017</td>
                                     <td>Paradigm Mall</td>
                                     <td>312413</td>
-                                    <td><button class="btn btn-sm"><span class="glyphicon glyphicon-print"></span></button></td>
+                                    <td class="width100_2">
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-eye-open"></span> View Order</button>
+                                        <button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-print"></span> Print</button>
+                                        <button class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-remove"></span> Cancel Order</button>
+                                    </td>
                                 </tr>
                             </table>
-                            <p class="well" style="color:#9e9e9e">Note : You can only cancel your order if the collection date is at least 3 days (before 12 noon)
-                                from now. We will credit it into your Credit Value account.</p>
+                            <p class="well" style="color:#9e9e9e">Note : You can only cancel your order if the collection date is at least 3 days (before 12 noon) from now. We will credit it into your Credit Value account.</p>
                         </div>
                     </div>
                 </div>
