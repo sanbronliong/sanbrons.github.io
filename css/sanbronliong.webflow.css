@@ -274,13 +274,17 @@ h1 {
   grid-auto-columns: 1fr;
   grid-column-gap: 54px;
   grid-row-gap: 100px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
 }
 
 .sl--portfolio-item {
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  -webkit-transform: perspective(0px) perspective(2000px);
+  transform: perspective(0px) perspective(2000px);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   color: #8c8c8c;
@@ -288,20 +292,19 @@ h1 {
 }
 
 .sl--portfolio-item:hover {
-  -webkit-transform: translate(0px, -10px);
-  -ms-transform: translate(0px, -10px);
-  transform: translate(0px, -10px);
+  -webkit-transform: translate(0px, -5px) perspective(0px) perspective(2000px);
+  transform: translate(0px, -5px) perspective(0px) perspective(2000px);
   color: #fff;
 }
 
 .sl--portfolio-thumb {
   width: 100%;
   height: auto;
-  margin-bottom: 24px;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .sl--portfolio-type {
+  margin-top: 24px;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
@@ -404,10 +407,15 @@ h1 {
   grid-auto-columns: 1fr;
   grid-column-gap: 54px;
   grid-row-gap: 100px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-areas: ".";
+  -ms-grid-columns: 0.75fr 54px 1fr;
+  grid-template-columns: 0.75fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.sl--about-me-item {
+  position: relative;
 }
 
 .sl--p-about {
@@ -427,6 +435,97 @@ h1 {
   bottom: 0%;
   width: 100%;
   height: 100%;
+}
+
+.sl--porrtfolio-link {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  background-color: #fff;
+  -webkit-transform: translate(0px, 52px);
+  -ms-transform: translate(0px, 52px);
+  transform: translate(0px, 52px);
+  color: #121212;
+}
+
+.sl--thumb-w {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.sl--portfolio-link {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  background-color: #fff;
+  box-shadow: 0 3px 8px 0 hsla(0, 0%, 7%, .1);
+  color: #121212;
+}
+
+.text-block {
+  padding: 12px 24px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #121212;
+}
+
+.sl--fa {
+  font-family: 'Fa solid 900', sans-serif;
+}
+
+.sl--fa.fa-l {
+  margin-right: 8px;
+}
+
+.sl--fab {
+  font-family: 'Fa brands 400', sans-serif;
+}
+
+.sl--fab.fab-l {
+  margin-right: 8px;
+}
+
+.sl--thumb-gloss {
+  position: absolute;
+  top: 0px;
+  z-index: auto;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: hsla(0, 0%, 100%, .4);
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+}
+
+.sl--blob {
+  position: absolute;
+  left: -42px;
+  top: 42px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(hsla(357.70334928229664, 85.31%, 51.96%, 1.00)), to(hsla(15.80487804878049, 87.98%, 54.31%, 1.00)));
+  background-image: linear-gradient(0deg, hsla(357.70334928229664, 85.31%, 51.96%, 1.00), hsla(15.80487804878049, 87.98%, 54.31%, 1.00));
+}
+
+.sl--ring-orange {
+  position: absolute;
+  left: -18px;
+  top: -18px;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: hsla(357.70334928229664, 85.31%, 51.96%, 1.00);
+  border-radius: 100%;
 }
 
 @media (max-width: 991px) {
@@ -555,8 +654,20 @@ h1 {
     line-height: 56px;
   }
   .sl--portfolio {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     grid-row-gap: 100px;
     grid-template-areas: ".";
+  }
+  .sl--portfolio-item {
+    margin-bottom: 65px;
   }
   .sl--footer-text-right {
     position: static;
@@ -580,20 +691,6 @@ h1 {
   .sl--h-contact {
     font-size: 32px;
     line-height: 46px;
-  }
-  .sl--portfolio {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .sl--portfolio-item {
-    margin-bottom: 64px;
   }
   .sl--content-title {
     font-size: 32px;
@@ -639,46 +736,24 @@ h1 {
   grid-row-end: 2;
 }
 
-#w-node-6782f713a44f-211dd2e7 {
-  -ms-grid-column-span: 1;
-  grid-column-end: 3;
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
+#w-node-0074e5c07b49-211dd2e7 {
+  -ms-grid-column: 3;
+  grid-column-start: 3;
   -ms-grid-row: 1;
   grid-row-start: 1;
-}
-
-#w-node-0074e5c07b49-211dd2e7 {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
   -ms-grid-column-span: 1;
-  grid-column-end: 2;
+  grid-column-end: 4;
   -ms-grid-row-span: 1;
-  grid-row-end: 3;
-}
-
-#w-node-05f086d95865-211dd2e7 {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-row: 3;
-  grid-row-start: 3;
-  -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-row-span: 1;
-  grid-row-end: 4;
+  grid-row-end: 2;
 }
 
 #w-node-62bae5743c03-211dd2e7 {
-  -ms-grid-column: 2;
-  grid-column-start: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
   -ms-grid-row: 2;
   grid-row-start: 2;
   -ms-grid-column-span: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
   -ms-grid-row-span: 1;
   grid-row-end: 3;
 }
@@ -686,6 +761,39 @@ h1 {
 #w-node-7f304fe33f16-211dd2e7 {
   -ms-grid-column: 2;
   grid-column-start: 2;
+  -ms-grid-row: 2;
+  grid-row-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3;
+}
+
+#game.w-node-9bf195913d74-211dd2e7 {
+  -ms-grid-column-span: 1;
+  grid-column-end: 4;
+  -ms-grid-column: 3;
+  grid-column-start: 3;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3;
+  -ms-grid-row: 2;
+  grid-row-start: 2;
+}
+
+#game.w-node-56e884010b89-211dd2e7 {
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 4;
+  -ms-grid-row: 3;
+  grid-row-start: 3;
+}
+
+#art.w-node-f53c9353eb43-211dd2e7 {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
   -ms-grid-row: 3;
   grid-row-start: 3;
   -ms-grid-column-span: 1;
@@ -694,48 +802,15 @@ h1 {
   grid-row-end: 4;
 }
 
-#game.w-node-9bf195913d74-211dd2e7 {
-  -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 5;
-  -ms-grid-row: 4;
-  grid-row-start: 4;
-}
-
-#art.w-node-f53c9353eb43-211dd2e7 {
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-row: 4;
-  grid-row-start: 4;
-  -ms-grid-column-span: 1;
-  grid-column-end: 3;
-  -ms-grid-row-span: 1;
-  grid-row-end: 5;
-}
-
 #game.w-node-f3ad0299d10f-211dd2e7 {
   -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-column: 1;
-  grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-column: 3;
+  grid-column-start: 3;
   -ms-grid-row-span: 1;
-  grid-row-end: 6;
-  -ms-grid-row: 5;
-  grid-row-start: 5;
-}
-
-#game.w-node-56e884010b89-211dd2e7 {
-  -ms-grid-column-span: 1;
-  grid-column-end: 3;
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-row-span: 1;
-  grid-row-end: 6;
-  -ms-grid-row: 5;
-  grid-row-start: 5;
+  grid-row-end: 4;
+  -ms-grid-row: 3;
+  grid-row-start: 3;
 }
 
 #w-node-22ec9faafc74-07f865aa {
@@ -763,14 +838,20 @@ h1 {
 }
 
 @font-face {
-  font-family: 'Basiercircle webfont';
-  src: url('../fonts/basiercircle-regular-webfont.ttf') format('truetype');
+  font-family: 'Archia webfont';
+  src: url('../fonts/archia-regular-webfont.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Archia webfont';
-  src: url('../fonts/archia-regular-webfont.ttf') format('truetype');
+  font-family: 'Fa solid 900';
+  src: url('../fonts/fa-solid-900.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fa brands 400';
+  src: url('../fonts/fa-brands-400.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
