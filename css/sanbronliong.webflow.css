@@ -109,7 +109,6 @@ h1 {
 .sl--h-hero {
   font-size: 54px;
   line-height: 72px;
-  font-weight: 400;
   letter-spacing: -2px;
 }
 
@@ -359,8 +358,8 @@ h1 {
 }
 
 .sl--fi-string.s-1 {
-  left: 45%;
-  top: 76%;
+  left: 29%;
+  top: 85%;
 }
 
 .sl--fi-string.s-2 {
@@ -378,7 +377,6 @@ h1 {
 
 .sl--content-title {
   margin-bottom: 24px;
-  font-weight: 400;
   letter-spacing: -2px;
 }
 
