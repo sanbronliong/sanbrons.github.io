@@ -109,6 +109,7 @@ h1 {
 .sl--h-hero {
   font-size: 54px;
   line-height: 72px;
+  font-weight: 400;
   letter-spacing: -2px;
 }
 
@@ -307,6 +308,7 @@ h1 {
 .sl--portfolio-title {
   margin-top: 6px;
   color: #fff;
+  font-weight: 400;
   letter-spacing: -1px;
 }
 
@@ -378,6 +380,7 @@ h1 {
 
 .sl--content-title {
   margin-bottom: 24px;
+  font-weight: 400;
   letter-spacing: -2px;
 }
 
