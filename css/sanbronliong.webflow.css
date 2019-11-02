@@ -262,7 +262,13 @@ h1 {
   color: #ed1c24;
 }
 
+.sl--link.wa:hover {
+  border-bottom-color: #25d366;
+  color: #25d366;
+}
+
 .sl--h-contact {
+  width: 100%;
   color: #131313;
   font-size: 54px;
   line-height: 72px;
@@ -296,8 +302,8 @@ h1 {
 }
 
 .sl--portfolio-item:hover {
-  -webkit-transform: translate(0px, -5px) perspective(0px) perspective(2000px);
-  transform: translate(0px, -5px) perspective(0px) perspective(2000px);
+  -webkit-transform: perspective(0px) perspective(2000px);
+  transform: perspective(0px) perspective(2000px);
   color: #fff;
 }
 
@@ -481,7 +487,7 @@ h1 {
 .sl--thumb-gloss {
   position: absolute;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
   display: none;
   overflow: hidden;
   width: 100%;
@@ -618,6 +624,10 @@ h1 {
   margin-right: 8px;
 }
 
+.sl--fa.fa-brands {
+  font-family: 'Fa brands 400', sans-serif;
+}
+
 .sl--helps {
   display: -ms-grid;
   display: grid;
@@ -712,6 +722,57 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto 54px auto 54px auto;
   grid-template-rows: auto auto auto;
+}
+
+.sl--or {
+  margin-right: 24px;
+  margin-left: 24px;
+  color: #303030;
+  font-size: 32px;
+}
+
+.sl--link-wa {
+  display: inline-block;
+  border-bottom: 2px solid #8d8d8d;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  color: #8d8d8d;
+  text-decoration: none;
+}
+
+.sl--link-wa:hover {
+  border-bottom: 2px solid #25d366;
+  -webkit-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
+  color: #25d366;
+}
+
+.sl--link-wa.wa:hover {
+  border-bottom-color: #25d366;
+  color: #25d366;
+}
+
+.sl--link-email {
+  display: inline-block;
+  border-bottom: 2px solid #8d8d8d;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  color: #8d8d8d;
+  text-decoration: none;
+}
+
+.sl--link-email:hover {
+  border-bottom: 2px solid #ed1c24;
+  -webkit-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
+  color: #ed1c24;
+}
+
+.sl--link-email.wa:hover {
+  border-bottom-color: #25d366;
+  color: #25d366;
 }
 
 @media (max-width: 991px) {
@@ -967,6 +1028,11 @@ h1 {
     grid-row-gap: 100px;
     grid-template-areas: ".";
   }
+  .sl--or {
+    display: block;
+    margin: 12px 0px;
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1022,6 +1088,9 @@ h1 {
   .sl--data {
     margin-bottom: 32px;
   }
+  .sl--or {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1032,6 +1101,9 @@ h1 {
     font-size: 7vw;
     line-height: 12vw;
     text-align: center;
+  }
+  .sl--or {
+    font-size: 18px;
   }
 }
 
