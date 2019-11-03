@@ -262,11 +262,6 @@ h1 {
   color: #ed1c24;
 }
 
-.sl--link.wa:hover {
-  border-bottom-color: #25d366;
-  color: #25d366;
-}
-
 .sl--h-contact {
   width: 100%;
   color: #131313;
@@ -457,7 +452,7 @@ h1 {
 .sl--thumb-w {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 24px;
 }
 
 .sl--portfolio-link {
@@ -670,6 +665,7 @@ h1 {
 .sl--recognition-title {
   margin-top: 6px;
   color: #fff;
+  font-weight: 400;
   letter-spacing: -1px;
 }
 
@@ -748,11 +744,6 @@ h1 {
   color: #25d366;
 }
 
-.sl--link-wa.wa:hover {
-  border-bottom-color: #25d366;
-  color: #25d366;
-}
-
 .sl--link-email {
   display: inline-block;
   border-bottom: 2px solid #8d8d8d;
@@ -768,11 +759,6 @@ h1 {
   -ms-transform: translate(0px, -2px);
   transform: translate(0px, -2px);
   color: #ed1c24;
-}
-
-.sl--link-email.wa:hover {
-  border-bottom-color: #25d366;
-  color: #25d366;
 }
 
 @media (max-width: 991px) {
