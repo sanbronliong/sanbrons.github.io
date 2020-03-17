@@ -1,0 +1,518 @@
+/* === A Link --- */
+a {
+    color:inherit;
+}
+/* === Button Group === */
+.ad--btn-group.right .ad--btn {
+    margin-right: 0px;
+    margin-left: 6px;
+}
+/* === Checkbox === */
+/* Customize the label (the container) */
+.ad--checkbox-w {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.ad--checkbox-w input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.ad--checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+/* On mouse-over, add a grey background color */
+.ad--checkbox-w:hover input ~ .ad--checkmark {
+    background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.ad--checkbox-w input:checked ~ .ad--checkmark {
+    background-color: #2196F3;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.ad--checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.ad--checkbox-w input:checked ~ .ad--checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.ad--checkbox-w .ad--checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* Start - Overide advanxhealth-dashboard.webflow.css */
+body {
+    font-size:14px;
+}
+.ad--side-navlink {
+    padding-bottom:2px;
+    padding-top:2px;
+    font-size:14px;
+}
+.ad--icon.side-navlink-r {
+    top:2px;
+}
+/* End - Overide advanxhealth-dashboard.webflow.css */
+/* === Mobile Nav Menu === */
+.ad--navmenu.open {
+    animation: menuopen .2s;
+    animation-fill-mode: both;
+}
+@keyframes menuopen {
+    from {
+        -webkit-transform: translate(12px, -12px) scale(0.9);
+        -ms-transform: translate(12px, -12px) scale(0.9);
+        transform: translate(12px, -12px) scale(0.9);
+        opacity:0;
+   }
+    to {
+        -webkit-transform: translate(0%, 0px);
+        -ms-transform: translate(0%, 0px);
+        transform: translate(0%, 0px);
+        opacity:1;
+   }
+}
+.ad--navmenu.closing {
+    animation: menuclosing .2s;
+    animation-fill-mode: both;
+}
+@keyframes menuclosing {
+    from {
+        -webkit-transform: translate(0%, 0px);
+        -ms-transform: translate(0%, 0px);
+        transform: translate(0%, 0px);
+        opacity:1;
+   }
+    to {
+        -webkit-transform: translate(12px, -12px) scale(0.9);
+        -ms-transform: translate(12px, -12px) scale(0.9);
+        transform: translate(12px, -12px) scale(0.9);
+        opacity:0;
+   }
+}
+/* === Bar Meter === */
+.ad--bar-meter > .ad--bar:first-of-type {
+    margin-left:0;
+    border-radius:6px 0 0 6px;
+}
+.ad--bar-meter > .ad--bar:last-of-type {
+    margin-right:0;
+    border-radius:0 6px 6px 0;
+}
+.ad--stats-box.report-summary-dark .ad--bar-meter.meter-perc {
+    position:relative;
+}
+.ad--stats-box.report-summary-dark .ad--bar-meter.meter-perc {
+    margin-top:36px;
+    height:14px;
+}
+.ad--stats-box .ad--bar-meter.meter-perc > .ad--meterperc-pointer {
+    bottom: 12px!important;
+    top: unset!important;
+}
+.ad--stats-box.report-summary-dark .ad--bar-meter.meter-perc .ad--bar-label {
+    color:white!important;
+    margin-top:0px;
+}
+.ad--stats-box.report-summary-dark .ad--bar-meter.meter-perc > .ad--meterperc-pointer {
+    bottom: 22px!important;
+}
+.ad--bar-meter.meter-perc > .ad--bar {
+    margin:0px;
+}
+.ad--meterperc-label {
+    position: absolute;
+    bottom: -24px;
+    transform: translateX(-50%);
+    color:#898989;
+}
+.ad--meterperc-pointer {
+    position:relative;
+}
+.ad--meterperc-pointer > span{
+    position: absolute;
+    top: -32px;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 18px;
+}
+/* === Except Mobile === */
+@media (min-width: 479px) {
+    .ad--stats-box.large .ad--bar-meter {
+        position: absolute;
+        right: 0px;
+        width: 180px;
+        bottom: 0px;
+   }
+}
+.ad--stats-box[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"]::after,
+.ad--stats-box[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"]::after,
+.ad--stats-box[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"]::after,
+.ad--stats-box[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"]::after,
+.ad--stats-dull[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"]::after,
+.ad--stats-dull[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"]::after,
+.ad--stats-dull[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"]::after,
+.ad--stats-dull[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"]::after,
+.ad--bar-meter.meter-perc > .ad--meterperc-pointer  {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    transform: translatex(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #898989;
+}
+.ad--stats-box .ad--bar-meter.meter-perc > .ad--bar::after {
+    display:none;
+}
+.ad--bar-meter.meter-perc > .ad--meterperc-pointer
+/* === BAR COLOURS === */
+/* #1 YELLOW */
+.ad--stats-box[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"],
+.ad--bar-meter.meter-perc > .ad--bar[data-bar="1"] {
+    background: #EBB154;
+}
+/* #2 GREEN */
+.ad--stats-box[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"],
+.ad--bar-meter.meter-perc > .ad--bar[data-bar="2"] {
+    background: #5AE29E;
+}
+/* #3 RED */
+.ad--stats-box[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"],
+.ad--bar-meter.meter-perc > .ad--bar[data-bar="3"] {
+    background: #F24F4F;
+}
+/* #4 BLUE */
+.ad--stats-box[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"],
+.ad--bar-meter.meter-perc > .ad--bar[data-bar="4"]{
+    background: #21B1E6;
+}
+
+/* === BAR LABEL COLOURS === */
+/* #1 YELLOW */
+.ad--stats-box[data-stats="1"] .ad--stats-value,
+.ad--stats-box[data-stats="1"] .ad--bar[data-bar="1"] > .ad--bar-label,
+.ad--summary-value[data-stats="1"] > div,
+.ad--bar-meter.meter-perc > .ad--bar[data-bar="1"] > .ad--bar-label {
+    color: #EBB154;
+    opacity:1;
+}
+/* #2 GREEN */
+.ad--stats-box[data-stats="2"] .ad--stats-value,
+.ad--stats-box[data-stats="2"] .ad--bar[data-bar="2"] > .ad--bar-label,
+.ad--summary-value[data-stats="2"] > div,
+.ad--bar-meter.meter-perc > .ad--bar[data-bar="2"] > .ad--bar-label {
+    color: #5AE29E;
+    opacity:1;
+}
+/* #3 RED */
+.ad--stats-box[data-stats="3"] .ad--stats-value,
+.ad--stats-box[data-stats="3"] .ad--bar[data-bar="3"] > .ad--bar-label,
+.ad--summary-value[data-stats="3"] > div,
+.ad--bar-meter.meter-perc > .ad--bar[data-bar="3"] > .ad--bar-label {
+    color: #F24F4F;
+    opacity:1;
+}
+/* #4 BLUE */
+.ad--stats-box[data-stats="4"] .ad--stats-value,
+.ad--stats-box[data-stats="4"] .ad--bar[data-bar="4"] > .ad--bar-label,
+.ad--summary-value[data-stats="4"] > div,
+.ad--bar-meter.meter-perc > .ad--bar[data-bar="4"] > .ad--bar-label {
+    color: #21B1E6;
+    opacity:1;
+}
+/* Pending delete */
+.ad--stats-dull[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"], .ad--stats-dull[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"], .ad--stats-dull[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"], .ad--stats-dull[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"]{
+    background: #898989;
+}
+.ad--stats-dull[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"] > .ad--bar-label, .ad--stats-dull[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"] > .ad--bar-label, .ad--stats-dull[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"] > .ad--bar-label, .ad--stats-dull[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"] > .ad--bar-label {
+    font-weight:700;
+}
+/* === Chart === */
+.ad--chart-w canvas#summary-chart {
+    width:100%!important;
+}
+/* === Table list last of type === */
+.ad--summary-table .ad--summary-list:last-of-type, .ad--genes-table .ad--genes-list:last-of-type, .ad--food-source-table .ad--food-source-list:last-of-type, .ad--ordered-table .ad--ordered-list:last-of-type, .ad--recom-table .ad--recom-list:last-of-type{
+    border-bottom:0px;
+}
+/* === Side Navlink === */
+.ad--side-navlink.w--current > .ad--icon.side-navlink-r {
+    color:#21B1E6;
+}
+/* === Insights Box === */
+.ad--insights-section[data-locked="true"] .ad--stats-box {
+    opacity:0.3;
+}
+.ad--stats-title {
+    word-break:break-word;
+}
+/* == Hidden link -- */
+.ad--stats-box:hover .ad--hidden-link, .ad--recom-list:hover .ad--hidden-link{
+    display:flex;
+    animation: linkopen .2s;
+    animation-fill-mode: both;
+}
+@keyframes linkopen {
+    from {
+        -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        transform: scale(0.7);
+        opacity:0;
+   }
+    to {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity:1;
+   }
+}
+/* === Report Section === */
+.ad--report-section:last-of-type {
+    margin-bottom: 0px;
+}
+/* === Ordered List table === */
+ol.ad--ordered-table {
+    list-style: none;
+    counter-reset: item;
+}
+ol.ad--ordered-table li.ad--ordered-list{
+    counter-increment: item;
+    margin-bottom: 5px;
+}
+ol.ad--ordered-table li.ad--ordered-list:before {
+    content: counter(item);
+    position: absolute;
+    left: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border:1px solid #21b1e6;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #21b1e6;
+    color: #fff;
+}
+
+/* === Tick image === */
+.ad--checkbox img {
+    display:none;
+}
+.ad--checkbox.w--redirected-checked {
+    border-width:0px;
+    overflow:hidden;
+}
+.ad--checkbox.w--redirected-checked img {
+    display:block;
+}
+/* === Desktop only === */
+@media (min-width: 991px) {
+    .ad--navmenu {
+        display:block!important;
+   }
+}
+/*--------------- Tablet ---------------*/
+@media (max-width: 991px) {
+}
+/*--------------- Mobile Landscape ---------------*/
+@media (max-width: 767px) {
+}
+/*--------------- Mobile Portrait ---------------*/
+@media (max-width: 479px) {
+    ol.ad--ordered-table li.ad--ordered-list:before {
+        position: relative;
+        left: 0;
+        margin-bottom: 6px;
+   }
+   .ad--bar-meter {
+        position: relative;
+    }
+}
+/* Override styles when printing */
+@media print {
+    body {
+        margin: 0;
+        color: #000;
+        background-color: #fff;
+        line-height:16px;overflow: visible;
+        font-size:12px;
+   }
+   img {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    }
+   h3 {
+    font-size: 18px;
+    line-height: 24px;
+   }
+   h4.ad--h {
+    font-size: 16px;
+    line-height: 20px;
+   }
+
+   /* Hidden */
+    *[data-hideprint="true"] {
+        display:none!important;
+   }
+    *[data-showprint="true"] {
+        display:block;
+   }
+    * {
+        color:black;
+        box-shadow:none!important;
+   }
+    @page {
+        size: auto;
+       /* auto is the current printer page size */
+        margin: 4mm 7mm;
+       /* this affects the margin in the printer settings */
+   }
+   /* Navbar */
+   .ad--navbar {
+       position:relative;
+   }
+   /* Custom style */
+   .ad--recom-box {
+    margin-bottom: 12px;
+    padding: 18px;
+   }
+   .ad--recom-img {
+    width: 32px;
+    height: 32px;
+   }
+   .ad--stats-box.report-summary-dark {
+       background:unset;
+   }
+   .ad--stats-box.report-summary-grey {
+       background:unset;
+   }
+   .ad--section-icon {
+       background:unset;
+   }
+   .ad--riskfactor-img {
+       height:24px;
+       position:relative;
+       top:0;
+   }
+   .ad--risk-factor-box{
+    padding: 10px 18px;
+    margin-top:0px;
+   }
+   .ad--stats-value.large {
+    font-size: 18px;
+    line-height: 24px;
+}
+    .ad--side-content {
+        padding:0px;
+        margin:0px;
+   }
+    ol.ad--ordered-table li.ad--ordered-list:before, .ad--section-icon {
+        border: 1px solid #e6e6e6;
+        color:black;
+   }
+    .ad--bar {
+        border:3px solid #e6e6e6;
+   }
+    .ad--food-bar {
+        border:4px solid #21b1e6;
+   }
+    .ad--stats-box[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"],
+    .ad--bar-meter.meter-perc > .ad--bar[data-bar="1"] {
+        border:3px solid #EBB154;
+   }
+    .ad--stats-box[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"],
+    .ad--bar-meter.meter-perc > .ad--bar[data-bar="2"] {
+        border:3px solid #5AE29E;
+   }
+    .ad--stats-box[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"],
+    .ad--bar-meter.meter-perc > .ad--bar[data-bar="3"] {
+        border:3px solid #F24F4F;
+   }
+    .ad--stats-box[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"],
+    .ad--bar-meter.meter-perc > .ad--bar[data-bar="4"] {
+        border:3px solid #21B1E6;
+   }
+   .ad--info-area {
+       margin-bottom:6px;
+   }
+   .ad--bar-meter .ad--bar {
+       height:3px;
+   }
+   .ad--stats-box {
+       padding:0px;
+       border:0px;
+       border-radius:0px;
+       overflow:unset;
+       background:unset;
+   }
+   .ad--stats-title {
+        font-size:14px;
+        line-height:18px;
+        height:auto;
+   }
+   .ad--stats-value {
+       font-size:14px;
+   }
+   .ad--bar-meter {
+       margin-top:6px;
+       height:3px;
+   }
+   .ad--food-source-list {
+       padding:4px 8px;
+   }
+   .ad--food-img {
+       widows: 32px;
+       height:32px;
+       bottom:-12px;
+   }
+   .ad--ordered-list {
+    padding: 10px 10px 12px 66px;
+    min-height:48px;
+   }
+   .ad--genes-list {
+       padding:10px 0;
+   }
+   .ad--genes-table {
+       padding:10px;
+   }
+}
