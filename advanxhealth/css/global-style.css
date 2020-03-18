@@ -175,10 +175,6 @@ body {
 .ad--stats-box[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"]::after,
 .ad--stats-box[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"]::after,
 .ad--stats-box[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"]::after,
-.ad--stats-dull[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"]::after,
-.ad--stats-dull[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"]::after,
-.ad--stats-dull[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"]::after,
-.ad--stats-dull[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"]::after,
 .ad--bar-meter.meter-perc > .ad--meterperc-pointer  {
     content: " ";
     position: absolute;
@@ -194,7 +190,6 @@ body {
 .ad--stats-box .ad--bar-meter.meter-perc > .ad--bar::after {
     display:none;
 }
-.ad--bar-meter.meter-perc > .ad--meterperc-pointer
 /* === BAR COLOURS === */
 /* #1 YELLOW */
 .ad--stats-box[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"],
@@ -249,13 +244,6 @@ body {
 .ad--bar-meter.meter-perc > .ad--bar[data-bar="4"] > .ad--bar-label {
     color: #21B1E6;
     opacity:1;
-}
-/* Pending delete */
-.ad--stats-dull[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"], .ad--stats-dull[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"], .ad--stats-dull[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"], .ad--stats-dull[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"]{
-    background: #898989;
-}
-.ad--stats-dull[data-stats="1"] .ad--bar-meter > .ad--bar[data-bar="1"] > .ad--bar-label, .ad--stats-dull[data-stats="2"] .ad--bar-meter > .ad--bar[data-bar="2"] > .ad--bar-label, .ad--stats-dull[data-stats="3"] .ad--bar-meter > .ad--bar[data-bar="3"] > .ad--bar-label, .ad--stats-dull[data-stats="4"] .ad--bar-meter > .ad--bar[data-bar="4"] > .ad--bar-label {
-    font-weight:700;
 }
 /* === Chart === */
 .ad--chart-w canvas#summary-chart {
