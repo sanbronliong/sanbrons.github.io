@@ -368,7 +368,7 @@ ol.ad--ordered-table li.ad--ordered-list:before {
         line-height:16px;overflow: visible;
         font-size:12px;
    }
-   div.ad--report-section {
+   div.ad--report-section, div.ad--recom-box {
     page-break-inside: avoid;
     }
    img {
