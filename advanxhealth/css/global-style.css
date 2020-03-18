@@ -355,6 +355,10 @@ ol.ad--ordered-table li.ad--ordered-list:before {
         position: relative;
     }
 }
+
+
+
+
 /* Override styles when printing */
 @media print {
     body {
@@ -364,6 +368,9 @@ ol.ad--ordered-table li.ad--ordered-list:before {
         line-height:16px;overflow: visible;
         font-size:12px;
    }
+   div.ad--report-section {
+    page-break-inside: avoid;
+    }
    img {
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
@@ -502,5 +509,8 @@ ol.ad--ordered-table li.ad--ordered-list:before {
    }
    .ad--genes-table {
        padding:10px;
+   }
+   .ad--stats-box.report-summary-dark {
+       display:block;
    }
 }
