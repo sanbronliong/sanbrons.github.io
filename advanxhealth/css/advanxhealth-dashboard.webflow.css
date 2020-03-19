@@ -2402,3 +2402,24 @@ a {
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../fonts/karla-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../fonts/karla-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../fonts/karla-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
