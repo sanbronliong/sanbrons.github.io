@@ -1,750 +1,774 @@
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>AdvanxHealth Dashboard</title>
+    <meta charset="utf-8">
+    <title>AdvanxHealth Dashboard</title>
 </head>
-<body>
-  <div data-collapse="medium" data-animation="over-right" data-duration="400" data-doc-height="1" class="ad--navbar w-nav">
-    <div class="ad--container"><a href="index.html" aria-current="page" class="ad--brand w-nav-brand w--current"><img src="images/advanxhealth_logo.png" srcset="images/advanxhealth_logo-p-500.png 500w, images/advanxhealth_logo-p-800.png 800w, images/advanxhealth_logo-p-1080.png 1080w, images/advanxhealth_logo.png 1170w" sizes="149px" alt="" class="ah-logo"></a>
-      <div class="ad--navmenu">
-        <a href="#" class="ad--navlink-profile w-inline-block">
-          <div>Jaime King</div><img src="images/profile_pic.png" alt="" class="ad--profile-pic"></a><a href="index.html" data-hideprint="true" aria-current="page" class="ad--navlink w-nav-link w--current">Report Insights</a><a href="recommendations.html" data-hideprint="true" class="ad--navlink w-nav-link">Recommendations</a><a href="#" data-hideprint="true" class="ad--navlink highlight w-nav-link">Explore Services</a></div>
-      <a data-target="ad--navmenu" href="#" class="ad--hamburger w-inline-block">
-        <div class="ad--icon"></div>
-      </a>
+
+<body class="ad--body-overview">
+    <div class="ad--navbar w-nav">
+        <div class="ad--container">
+            <a href="index.html" aria-current="page" class="ad--brand w-nav-brand w--current"><img src="images/advanxhealth_logo.png" srcset="images/advanxhealth_logo-p-500.png 500w, images/advanxhealth_logo-p-800.png 800w, images/advanxhealth_logo-p-1080.png 1080w, images/advanxhealth_logo.png 1170w" sizes="149px" alt="" class="ah-logo"></a>
+            <div class="ad--navmenu">
+                <a href="#" class="ad--navlink-profile w-inline-block">
+                    <div>Jaime King</div><img src="images/profile_pic.png" alt="" class="ad--profile-pic"></a><a href="index.html" data-hideprint="true" aria-current="page" class="ad--navlink w-nav-link w--current">Report Insights</a><a href="recommendations.html" data-hideprint="true" class="ad--navlink w-nav-link">Recommendations</a><a href="#" data-hideprint="true" class="ad--navlink highlight w-nav-link">Explore Services</a></div>
+            <a data-target="ad--navmenu" href="#" class="ad--hamburger w-inline-block">
+                <div class="ad--icon"></div>
+            </a>
+        </div>
     </div>
-  </div>
-  <div class="ad--hero-offset cyan">
-    <div class="ad--container">
-      <h3 class="ad--hero-title">Report Insights</h3>
-      <p>Get an overview of what your genetics results mean and how your DNA is interpreted. <a href="#">Click here read more</a></p>
+    <div class="ad--hero-offset cyan">
+        <div class="ad--container">
+            <h3 class="ad--hero-title">Report Insights</h3>
+            <p>Get an overview of what your genetics results mean and how your DNA is interpreted. <a href="#">Click here read more</a></p>
+        </div>
     </div>
-  </div>
-  <div class="ad--page-content">
-    <div class="ad--container">
-      <div class="ad--summary-box">
-        <div class="ad--summary">
-          <div class="ad--summary-col">
-            <h4 class="ad--h">Jaime King’s Traits Summary</h4>
-            <div class="ad--chart-w w-embed"><canvas id="summary-chart" style="width:100%!important"></canvas></div>
-          </div>
-          <div class="ad--summary-col">
-            <div class="ad--summary-table">
-              <div class="ad--summary-list list-head">
-                <div>
-                  <div>Reports</div>
+    <div class="ad--page-content">
+        <div class="ad--container">
+            <div class="ad--summary-box">
+                <div class="ad--summary">
+                    <div class="ad--summary-col">
+                        <h4 class="ad--h">Jaime King’s Traits Summary</h4>
+                        <div class="ad--chart-w w-embed">
+                            <canvas id="summary-chart" style="width:100%!important"></canvas>
+                        </div>
+                    </div>
+                    <div class="ad--summary-col">
+                        <div class="ad--summary-table">
+                            <div class="ad--summary-list list-head">
+                                <div>
+                                    <div>Reports</div>
+                                </div>
+                                <div class="ad--summary-stats">
+                                    <div class="ad--summary-value">
+                                        <div>OK</div>
+                                    </div>
+                                    <div class="ad--summary-value">
+                                        <div>Low</div>
+                                    </div>
+                                    <div class="ad--summary-value">
+                                        <div>High</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ad--summary-list">
+                                <div class="ad--summary-title w-clearfix"><img src="images/axh_diet-management.png" alt="" class="ad--report-icon small">
+                                    <div>Diet Management
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="ad--summary-stats">
+                                    <div data-stats="2" class="ad--summary-value">
+                                        <div>25</div>
+                                    </div>
+                                    <div data-stats="1" class="ad--summary-value">
+                                        <div>-</div>
+                                    </div>
+                                    <div data-stats="3" class="ad--summary-value">
+                                        <div>1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ad--summary-list">
+                                <div class="ad--summary-title w-clearfix"><img src="images/axh_nutrition-diet.png" alt="" class="ad--report-icon small">
+                                    <div>Nutrition &amp; Diet</div>
+                                </div>
+                                <div class="ad--summary-stats">
+                                    <div data-stats="2" class="ad--summary-value">
+                                        <div>25 </div>
+                                    </div>
+                                    <div data-stats="1" class="ad--summary-value">
+                                        <div>2</div>
+                                    </div>
+                                    <div data-stats="3" class="ad--summary-value">
+                                        <div>-</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ad--summary-list">
+                                <div class="ad--summary-title w-clearfix"><img src="images/axh_skin.png" alt="" class="ad--report-icon small">
+                                    <div>Skin</div>
+                                </div>
+                                <div class="ad--summary-stats">
+                                    <div data-stats="2" class="ad--summary-value">
+                                        <div>23</div>
+                                    </div>
+                                    <div data-stats="1" class="ad--summary-value">
+                                        <div>1 </div>
+                                    </div>
+                                    <div data-stats="3" class="ad--summary-value">
+                                        <div>3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ad--summary-list">
+                                <div class="ad--summary-title w-clearfix"><img src="images/axh_fitness.png" alt="" class="ad--report-icon small">
+                                    <div>Fitness</div>
+                                </div>
+                                <div class="ad--summary-stats">
+                                    <div data-stats="2" class="ad--summary-value">
+                                        <div>4</div>
+                                    </div>
+                                    <div data-stats="1" class="ad--summary-value">
+                                        <div>1 </div>
+                                    </div>
+                                    <div data-stats="3" class="ad--summary-value">
+                                        <div>-</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ad--summary-list">
+                                <div class="ad--summary-title w-clearfix"><img src="images/axh_inner-potential.png" alt="" class="ad--report-icon small">
+                                    <div>Inner Potential</div>
+                                </div>
+                                <div class="ad--summary-stats">
+                                    <div data-stats="2" class="ad--summary-value">
+                                        <div>23</div>
+                                    </div>
+                                    <div data-stats="1" class="ad--summary-value">
+                                        <div>2</div>
+                                    </div>
+                                    <div data-stats="3" class="ad--summary-value">
+                                        <div>-</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ad--summary-list">
+                                <div class="ad--summary-title w-clearfix"><img src="images/axh_health-risk.png" alt="" class="ad--report-icon small">
+                                    <div>Health Risks</div>
+                                </div>
+                                <div class="ad--summary-stats">
+                                    <div data-stats="2" class="ad--summary-value">
+                                        <div>13</div>
+                                    </div>
+                                    <div data-stats="1" class="ad--summary-value">
+                                        <div>-</div>
+                                    </div>
+                                    <div data-stats="3" class="ad--summary-value">
+                                        <div>1 </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ad--summary-stats">
-                  <div class="ad--summary-value">
-                    <div>OK</div>
-                  </div>
-                  <div class="ad--summary-value">
-                    <div>Low</div>
-                  </div>
-                  <div class="ad--summary-value">
-                    <div>High</div>
-                  </div>
-                </div>
-              </div>
-              <div class="ad--summary-list">
-                <div class="ad--summary-title w-clearfix"><img src="images/axh_diet-management.png" alt="" class="ad--report-icon small">
-                  <div>Diet Management<br></div>
-                </div>
-                <div class="ad--summary-stats">
-                  <div data-stats="2" class="ad--summary-value">
-                    <div>25</div>
-                  </div>
-                  <div data-stats="1" class="ad--summary-value">
-                    <div>-</div>
-                  </div>
-                  <div data-stats="3" class="ad--summary-value">
-                    <div>1</div>
-                  </div>
-                </div>
-              </div>
-              <div class="ad--summary-list">
-                <div class="ad--summary-title w-clearfix"><img src="images/axh_nutrition-diet.png" alt="" class="ad--report-icon small">
-                  <div>Nutrition &amp; Diet</div>
-                </div>
-                <div class="ad--summary-stats">
-                  <div data-stats="2" class="ad--summary-value">
-                    <div>25 </div>
-                  </div>
-                  <div data-stats="1" class="ad--summary-value">
-                    <div>2</div>
-                  </div>
-                  <div data-stats="3" class="ad--summary-value">
-                    <div>-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="ad--summary-list">
-                <div class="ad--summary-title w-clearfix"><img src="images/axh_skin.png" alt="" class="ad--report-icon small">
-                  <div>Skin</div>
-                </div>
-                <div class="ad--summary-stats">
-                  <div data-stats="2" class="ad--summary-value">
-                    <div>23</div>
-                  </div>
-                  <div data-stats="1" class="ad--summary-value">
-                    <div>1 </div>
-                  </div>
-                  <div data-stats="3" class="ad--summary-value">
-                    <div>3</div>
-                  </div>
-                </div>
-              </div>
-              <div class="ad--summary-list">
-                <div class="ad--summary-title w-clearfix"><img src="images/axh_fitness.png" alt="" class="ad--report-icon small">
-                  <div>Fitness</div>
-                </div>
-                <div class="ad--summary-stats">
-                  <div data-stats="2" class="ad--summary-value">
-                    <div>4</div>
-                  </div>
-                  <div data-stats="1" class="ad--summary-value">
-                    <div>1 </div>
-                  </div>
-                  <div data-stats="3" class="ad--summary-value">
-                    <div>-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="ad--summary-list">
-                <div class="ad--summary-title w-clearfix"><img src="images/axh_inner-potential.png" alt="" class="ad--report-icon small">
-                  <div>Inner Potential</div>
-                </div>
-                <div class="ad--summary-stats">
-                  <div data-stats="2" class="ad--summary-value">
-                    <div>23</div>
-                  </div>
-                  <div data-stats="1" class="ad--summary-value">
-                    <div>2</div>
-                  </div>
-                  <div data-stats="3" class="ad--summary-value">
-                    <div>-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="ad--summary-list">
-                <div class="ad--summary-title w-clearfix"><img src="images/axh_health-risk.png" alt="" class="ad--report-icon small">
-                  <div>Health Risks</div>
-                </div>
-                <div class="ad--summary-stats">
-                  <div data-stats="2" class="ad--summary-value">
-                    <div>13</div>
-                  </div>
-                  <div data-stats="1" class="ad--summary-value">
-                    <div>-</div>
-                  </div>
-                  <div data-stats="3" class="ad--summary-value">
-                    <div>1 </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+            <div data-hideprint="true" class="ad--notice-box">
+                <div class="ad--notice-icon">
+                    <div class="ad--icon"></div>
+                </div>
+                <div class="ad--notice-info">
+                    <div class="ad--notice-title">Schedule a consultation session with us</div>
+                    <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                </div>
+                <div class="ad--btn-group"><a href="#" class="ad--btn btn-success w-button">GET STARTED<span class="ad--icon icon-right"></span></a></div>
+            </div>
+            <div class="ad--insights-w">
+                <div class="w-layout-grid ad--insights-section">
+                    <div id="w-node-9c093b2ed366-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_diet-management.png" alt="" class="ad--report-icon">
+                        <h3 class="ad--h">Diet Managements</h3>
+                        <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                        <div class="ad--insights-cta hide-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 5 reports &gt;</a></div>
+                    </div>
+                    <div data-stats="1" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Appetite Regulation</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Low</div>
+                            <div class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="3" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Lactose Intolerance</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">High</div>
+                            <div data-barvalue="4" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="1" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Obesity</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Low</div>
+                            <div data-barvalue="1" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Caffeine Metabolism</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Alcohol Metabolism</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div class="ad--insights-cta show-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 5 reports &gt;</a></div>
+                </div>
+                <div class="ad--divider"></div>
+                <div class="w-layout-grid ad--insights-section">
+                    <div id="w-node-e1293096ad9c-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_nutrition-diet.png" alt="" class="ad--report-icon">
+                        <h3 class="ad--h">Nutrition &amp; Diet</h3>
+                        <div class="ad--p">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                        <div class="ad--insights-cta hide-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 8 reports<span class="ad--icon icon-right"></span></a></div>
+                    </div>
+                    <div data-stats="3" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Skin Ageing</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">High</div>
+                            <div class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div><img src="images/axh_chickpeas.png" data-hideprint="true" alt="" class="ad--stats-box-img">
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="1" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Wrinkle</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Low</div>
+                            <div data-barvalue="4" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Collagen Breakdown</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="1" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Skin Elasticity</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Antioxidant</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Hydration</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div class="ad--insights-cta show-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 8 reports &gt;</a></div>
+                </div>
+                <div class="ad--divider"></div>
+                <div class="w-layout-grid ad--insights-section">
+                    <div id="w-node-b51bd79494b2-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_skin.png" alt="" class="ad--report-icon">
+                        <h3 class="ad--h">Skin</h3>
+                        <div class="ad--p">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                        <div class="ad--insights-cta hide-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 10 reports<span class="ad--icon icon-right"></span></a></div>
+                    </div>
+                    <div data-stats="3" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Skin Ageing</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">High</div>
+                            <div class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="1" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Wrinkle</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Low</div>
+                            <div data-barvalue="4" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Collagen Breakdown</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="1" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Skin Elasticity</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Antioxidant</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Hydration</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div class="ad--insights-cta show-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 10 reports &gt;</a></div>
+                </div>
+                <div class="ad--divider"></div>
+                <div class="w-layout-grid ad--insights-section">
+                    <div id="w-node-a053314d77cd-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_fitness.png" alt="" class="ad--report-icon">
+                        <h3 class="ad--h">Fitness</h3>
+                        <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                            <br>
+                        </div>
+                        <div class="ad--insights-cta hide-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 5 reports<span class="ad--icon icon-right"></span></a></div>
+                    </div>
+                    <div data-stats="1" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Sports Recovery Ability</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Low</div>
+                            <div class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="3" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Wrinkle</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">High</div>
+                            <div data-barvalue="4" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="1" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Collagen Breakdown</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Low</div>
+                            <div data-barvalue="1" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Skin Elasticity</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Antioxidant</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div data-stats="2" class="ad--stats-box">
+                        <div class="ad--info-area">
+                            <div class="ad--stats-title">Hydration</div>
+                        </div>
+                        <div class="ad--stats-area">
+                            <div class="ad--stats-value">Normal</div>
+                            <div data-barvalue="2" class="ad--bar-meter">
+                                <div data-bar="1" class="ad--bar"></div>
+                                <div data-bar="2" class="ad--bar"></div>
+                                <div data-bar="3" class="ad--bar"></div>
+                            </div>
+                        </div>
+                        <a href="detail-report.html" class="ad--hidden-link w-inline-block">
+                            <div>View report<span class="ad--icon icon-right"></span></div>
+                        </a>
+                    </div>
+                    <div class="ad--insights-cta show-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 5 reports &gt;</a></div>
+                </div>
+                <div class="ad--divider"></div>
+                <div data-locked="true" class="w-layout-grid ad--insights-section">
+                    <div id="w-node-b56caad048b7-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_inner-potential.png" alt="" class="ad--report-icon">
+                        <h3 class="ad--h">Inner Potential</h3>
+                        <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                            <br>
+                            <br>Ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                    </div>
+                    <div id="w-node-091c21ff6c15-28aa67fb" class="ad--locked-area"><img src="images/DNA-Explorer-Health360.png" alt="" class="ad--product-locked-icon"><a href="#" class="ad--btn btn-secondary w-button">UNLOCK 16 REPORTS<span class="ad--icon icon-right"></span></a></div>
+                    <div id="w-node-ea993e7302cb-28aa67fb" class="ad--demo-data">
+                        <div data-stats="4" class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title">Ability To Memorise</div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--stats-value">High</div>
+                                <div class="ad--bar-meter">
+                                    <div data-bar="1" class="ad--bar"></div>
+                                    <div data-bar="2" class="ad--bar"></div>
+                                    <div data-bar="4" class="ad--bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-stats="2" class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title">Learning Ability</div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--stats-value">Normal</div>
+                                <div data-barvalue="4" class="ad--bar-meter">
+                                    <div data-bar="1" class="ad--bar"></div>
+                                    <div data-bar="2" class="ad--bar"></div>
+                                    <div data-bar="4" class="ad--bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-stats="1" class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title">Ability To Handle Stress</div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--stats-value">Low</div>
+                                <div data-barvalue="1" class="ad--bar-meter">
+                                    <div data-bar="1" class="ad--bar"></div>
+                                    <div data-bar="2" class="ad--bar"></div>
+                                    <div data-bar="4" class="ad--bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-stats="1" class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title">Cognitive Ability</div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--stats-value">Low</div>
+                                <div data-barvalue="2" class="ad--bar-meter">
+                                    <div data-bar="1" class="ad--bar"></div>
+                                    <div data-bar="2" class="ad--bar"></div>
+                                    <div data-bar="4" class="ad--bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-stats="1" class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title">Absolute Pitch</div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--stats-value">Low</div>
+                                <div data-barvalue="2" class="ad--bar-meter">
+                                    <div data-bar="1" class="ad--bar"></div>
+                                    <div data-bar="2" class="ad--bar"></div>
+                                    <div data-bar="4" class="ad--bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-stats="1" class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title">Creative Ability</div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--stats-value">Low</div>
+                                <div data-barvalue="2" class="ad--bar-meter">
+                                    <div data-bar="1" class="ad--bar"></div>
+                                    <div data-bar="2" class="ad--bar"></div>
+                                    <div data-bar="4" class="ad--bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad--divider"></div>
+                <div data-locked="true" class="w-layout-grid ad--insights-section">
+                    <div id="w-node-cb4cef2d6f96-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_health-risk.png" alt="" class="ad--report-icon">
+                        <h3 class="ad--h">Health Risks</h3>
+                        <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                            <br>
+                        </div>
+                    </div>
+                    <div id="w-node-6b0a0b6c4ecc-28aa67fb" class="ad--locked-area"><img src="images/DNA-Explorer-Health360.png" alt="" class="ad--product-locked-icon"><a href="#" class="ad--btn btn-secondary w-button">UNLOCK 16 REPORTS<span class="ad--icon icon-right"></span></a></div>
+                    <div id="w-node-89aae373df73-28aa67fb" class="ad--demo-data">
+                        <div data-stats="1" class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title">Familial Hypercholesterolaemia</div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--stats-value">Low</div>
+                                <div data-barvalue="2" class="ad--bar-meter">
+                                    <div data-bar="1" class="ad--bar"></div>
+                                    <div data-bar="2" class="ad--bar"></div>
+                                    <div data-bar="4" class="ad--bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title one-line">Osteoporosis</div>
+                                <div class="ad--p">Population risk: 10.6
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--level-meter">
+                                    <div class="ad--population-risk">10.6</div><img src="images/meter-3.png" alt="">
+                                    <div class="ad--stats-value level-meter">16.0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title one-line">Hypertension</div>
+                                <div class="ad--p">Population risk: 35.3
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--level-meter">
+                                    <div class="ad--population-risk">35.3</div><img src="images/meter-1.png" alt="">
+                                    <div class="ad--stats-value level-meter">12.35</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title one-line">Asthma</div>
+                                <div class="ad--p">Population risk: 4.5
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--level-meter">
+                                    <div class="ad--population-risk">4.5</div><img src="images/meter-3.png" alt="">
+                                    <div class="ad--stats-value level-meter">4.64</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title one-line">Gout</div>
+                                <div class="ad--p">Population risk: 7.7
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--level-meter">
+                                    <div class="ad--population-risk">7.7</div><img src="images/meter-1.png" alt="">
+                                    <div class="ad--stats-value level-meter">7.24</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ad--stats-box">
+                            <div class="ad--info-area">
+                                <div class="ad--stats-title one-line">Gout</div>
+                                <div class="ad--p">Population risk: 7.7
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="ad--stats-area">
+                                <div class="ad--level-meter">
+                                    <div class="ad--population-risk">7.7</div><img src="images/meter-1.png" alt="">
+                                    <div class="ad--stats-value level-meter">7.24</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-hideprint="true" class="ad--notice-box">
+                <div class="ad--notice-icon">
+                    <div class="ad--icon"></div>
+                </div>
+                <div class="ad--notice-info">
+                    <div class="ad--notice-title">Get personalised meal plan, dietitian’s consultation and more!</div>
+                </div>
+                <div class="ad--btn-group"><a href="#" class="ad--btn btn-secondary w-button">EXPLORE NOW<span class="ad--icon icon-right"></span></a></div>
+            </div>
+            <div data-hideprint="true" class="ad--footer">
+                <div>Advanx Health © 2020. All rights reserved.</div>
+            </div>
         </div>
-      </div>
-      <div data-hideprint="true" class="ad--notice-box">
-        <div class="ad--notice-icon">
-          <div class="ad--icon"></div>
-        </div>
-        <div class="ad--notice-info">
-          <div class="ad--notice-title">Schedule a consultation session with us</div>
-          <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-        </div>
-        <div class="ad--btn-group"><a href="#" class="ad--btn btn-success w-button">GET STARTED<span class="ad--icon icon-right"></span></a></div>
-      </div>
-      <div class="ad--insights-w">
-        <div class="w-layout-grid ad--insights-section">
-          <div id="w-node-9c093b2ed366-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_diet-management.png" alt="" class="ad--report-icon">
-            <h3 class="ad--h">Diet Managements</h3>
-            <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
-            <div class="ad--insights-cta hide-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 5 reports &gt;</a></div>
-          </div>
-          <div data-stats="1" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Appetite Regulation</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Low</div>
-              <div class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="3" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Lactose Intolerance</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">High</div>
-              <div data-barvalue="4" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="1" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Obesity</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Low</div>
-              <div data-barvalue="1" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Caffeine Metabolism</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Alcohol Metabolism</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div class="ad--insights-cta show-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 5 reports &gt;</a></div>
-        </div>
-        <div class="ad--divider"></div>
-        <div class="w-layout-grid ad--insights-section">
-          <div id="w-node-e1293096ad9c-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_nutrition-diet.png" alt="" class="ad--report-icon">
-            <h3 class="ad--h">Nutrition &amp; Diet</h3>
-            <div class="ad--p">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-            <div class="ad--insights-cta hide-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 8 reports<span class="ad--icon icon-right"></span></a></div>
-          </div>
-          <div data-stats="3" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Skin Ageing</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">High</div>
-              <div class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div><img src="images/axh_chickpeas.png" data-hideprint="true" alt="" class="ad--stats-box-img">
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="1" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Wrinkle</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Low</div>
-              <div data-barvalue="4" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Collagen Breakdown</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="1" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Skin Elasticity</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Antioxidant</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Hydration</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div class="ad--insights-cta show-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 8 reports &gt;</a></div>
-        </div>
-        <div class="ad--divider"></div>
-        <div class="w-layout-grid ad--insights-section">
-          <div id="w-node-b51bd79494b2-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_skin.png" alt="" class="ad--report-icon">
-            <h3 class="ad--h">Skin</h3>
-            <div class="ad--p">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-            <div class="ad--insights-cta hide-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 10 reports<span class="ad--icon icon-right"></span></a></div>
-          </div>
-          <div data-stats="3" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Skin Ageing</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">High</div>
-              <div class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="1" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Wrinkle</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Low</div>
-              <div data-barvalue="4" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Collagen Breakdown</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="1" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Skin Elasticity</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Antioxidant</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Hydration</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div class="ad--insights-cta show-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 10 reports &gt;</a></div>
-        </div>
-        <div class="ad--divider"></div>
-        <div class="w-layout-grid ad--insights-section">
-          <div id="w-node-a053314d77cd-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_fitness.png" alt="" class="ad--report-icon">
-            <h3 class="ad--h">Fitness</h3>
-            <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br></div>
-            <div class="ad--insights-cta hide-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 5 reports<span class="ad--icon icon-right"></span></a></div>
-          </div>
-          <div data-stats="1" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Sports Recovery Ability</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Low</div>
-              <div class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="3" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Wrinkle</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">High</div>
-              <div data-barvalue="4" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="1" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Collagen Breakdown</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Low</div>
-              <div data-barvalue="1" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Skin Elasticity</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Antioxidant</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div data-stats="2" class="ad--stats-box">
-            <div class="ad--info-area">
-              <div class="ad--stats-title">Hydration</div>
-            </div>
-            <div class="ad--stats-area">
-              <div class="ad--stats-value">Normal</div>
-              <div data-barvalue="2" class="ad--bar-meter">
-                <div data-bar="1" class="ad--bar"></div>
-                <div data-bar="2" class="ad--bar"></div>
-                <div data-bar="3" class="ad--bar"></div>
-              </div>
-            </div>
-            <a href="detail-report.html" class="ad--hidden-link w-inline-block">
-              <div>View report<span class="ad--icon icon-right"></span></div>
-            </a>
-          </div>
-          <div class="ad--insights-cta show-mobile"><a href="all-reports.html" class="ad--btn btn-primary w-button">See all 5 reports &gt;</a></div>
-        </div>
-        <div class="ad--divider"></div>
-        <div data-locked="true" class="w-layout-grid ad--insights-section">
-          <div id="w-node-b56caad048b7-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_inner-potential.png" alt="" class="ad--report-icon">
-            <h3 class="ad--h">Inner Potential</h3>
-            <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br><br>Ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-          </div>
-          <div id="w-node-091c21ff6c15-28aa67fb" class="ad--locked-area"><img src="images/DNA-Explorer-Health360.png" alt="" class="ad--product-locked-icon"><a href="#" class="ad--btn btn-secondary w-button">UNLOCK 16 REPORTS<span class="ad--icon icon-right"></span></a></div>
-          <div id="w-node-ea993e7302cb-28aa67fb" class="ad--demo-data">
-            <div data-stats="4" class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title">Ability To Memorise</div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--stats-value">High</div>
-                <div class="ad--bar-meter">
-                  <div data-bar="1" class="ad--bar"></div>
-                  <div data-bar="2" class="ad--bar"></div>
-                  <div data-bar="4" class="ad--bar"></div>
-                </div>
-              </div>
-            </div>
-            <div data-stats="2" class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title">Learning Ability</div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--stats-value">Normal</div>
-                <div data-barvalue="4" class="ad--bar-meter">
-                  <div data-bar="1" class="ad--bar"></div>
-                  <div data-bar="2" class="ad--bar"></div>
-                  <div data-bar="4" class="ad--bar"></div>
-                </div>
-              </div>
-            </div>
-            <div data-stats="1" class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title">Ability To Handle Stress</div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--stats-value">Low</div>
-                <div data-barvalue="1" class="ad--bar-meter">
-                  <div data-bar="1" class="ad--bar"></div>
-                  <div data-bar="2" class="ad--bar"></div>
-                  <div data-bar="4" class="ad--bar"></div>
-                </div>
-              </div>
-            </div>
-            <div data-stats="1" class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title">Cognitive Ability</div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--stats-value">Low</div>
-                <div data-barvalue="2" class="ad--bar-meter">
-                  <div data-bar="1" class="ad--bar"></div>
-                  <div data-bar="2" class="ad--bar"></div>
-                  <div data-bar="4" class="ad--bar"></div>
-                </div>
-              </div>
-            </div>
-            <div data-stats="1" class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title">Absolute Pitch</div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--stats-value">Low</div>
-                <div data-barvalue="2" class="ad--bar-meter">
-                  <div data-bar="1" class="ad--bar"></div>
-                  <div data-bar="2" class="ad--bar"></div>
-                  <div data-bar="4" class="ad--bar"></div>
-                </div>
-              </div>
-            </div>
-            <div data-stats="1" class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title">Creative Ability</div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--stats-value">Low</div>
-                <div data-barvalue="2" class="ad--bar-meter">
-                  <div data-bar="1" class="ad--bar"></div>
-                  <div data-bar="2" class="ad--bar"></div>
-                  <div data-bar="4" class="ad--bar"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="ad--divider"></div>
-        <div data-locked="true" class="w-layout-grid ad--insights-section">
-          <div id="w-node-cb4cef2d6f96-28aa67fb" class="ad--insights-desc w-clearfix"><img src="images/axh_health-risk.png" alt="" class="ad--report-icon">
-            <h3 class="ad--h">Health Risks</h3>
-            <div class="ad--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br></div>
-          </div>
-          <div id="w-node-6b0a0b6c4ecc-28aa67fb" class="ad--locked-area"><img src="images/DNA-Explorer-Health360.png" alt="" class="ad--product-locked-icon"><a href="#" class="ad--btn btn-secondary w-button">UNLOCK 16 REPORTS<span class="ad--icon icon-right"></span></a></div>
-          <div id="w-node-89aae373df73-28aa67fb" class="ad--demo-data">
-            <div data-stats="1" class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title">Familial Hypercholesterolaemia</div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--stats-value">Low</div>
-                <div data-barvalue="2" class="ad--bar-meter">
-                  <div data-bar="1" class="ad--bar"></div>
-                  <div data-bar="2" class="ad--bar"></div>
-                  <div data-bar="4" class="ad--bar"></div>
-                </div>
-              </div>
-            </div>
-            <div class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title one-line">Osteoporosis</div>
-                <div class="ad--p">Population risk: 10.6<br></div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--level-meter">
-                  <div class="ad--population-risk">10.6</div><img src="images/meter-3.png" alt="">
-                  <div class="ad--stats-value level-meter">16.0</div>
-                </div>
-              </div>
-            </div>
-            <div class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title one-line">Hypertension</div>
-                <div class="ad--p">Population risk: 35.3<br></div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--level-meter">
-                  <div class="ad--population-risk">35.3</div><img src="images/meter-1.png" alt="">
-                  <div class="ad--stats-value level-meter">12.35</div>
-                </div>
-              </div>
-            </div>
-            <div class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title one-line">Asthma</div>
-                <div class="ad--p">Population risk: 4.5<br></div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--level-meter">
-                  <div class="ad--population-risk">4.5</div><img src="images/meter-3.png" alt="">
-                  <div class="ad--stats-value level-meter">4.64</div>
-                </div>
-              </div>
-            </div>
-            <div class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title one-line">Gout</div>
-                <div class="ad--p">Population risk: 7.7<br></div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--level-meter">
-                  <div class="ad--population-risk">7.7</div><img src="images/meter-1.png" alt="">
-                  <div class="ad--stats-value level-meter">7.24</div>
-                </div>
-              </div>
-            </div>
-            <div class="ad--stats-box">
-              <div class="ad--info-area">
-                <div class="ad--stats-title one-line">Gout</div>
-                <div class="ad--p">Population risk: 7.7<br></div>
-              </div>
-              <div class="ad--stats-area">
-                <div class="ad--level-meter">
-                  <div class="ad--population-risk">7.7</div><img src="images/meter-1.png" alt="">
-                  <div class="ad--stats-value level-meter">7.24</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-hideprint="true" class="ad--notice-box">
-        <div class="ad--notice-icon">
-          <div class="ad--icon"></div>
-        </div>
-        <div class="ad--notice-info">
-          <div class="ad--notice-title">Get personalised meal plan, dietitian’s consultation and more!</div>
-        </div>
-        <div class="ad--btn-group"><a href="#" class="ad--btn btn-secondary w-button">EXPLORE NOW<span class="ad--icon icon-right"></span></a></div>
-      </div>
-      <div data-hideprint="true" class="ad--footer">
-        <div>Advanx Health © 2020. All rights reserved.</div>
-      </div>
     </div>
-  </div>
 </body>
+
 </html>
