@@ -1,5 +1,5 @@
 /* === Hamburger menu ===
-$(".ad--hamburger").on("click", function() {
+$(".axh--hamburger").on("click", function() {
 	targetClass = "."+$(this).data("target");
   if (!$(targetClass).hasClass("open")) {
   	$(targetClass).show(0);
@@ -9,18 +9,18 @@ $(".ad--hamburger").on("click", function() {
   }
 }); */
 /* Hamburger */
-$(".ad--hamburger").click(function() {
+$(".axh--hamburger").click(function() {
   if (!$(this).hasClass("opened")) {
     $(this).addClass("opened");
-    $(".ad--navmenu").addClass("open");
+    $(".axh--navmenu").addClass("open");
   } else if ($(this).hasClass("opened")) {
     $(this).removeClass("opened");
-    $(".ad--navmenu").addClass("closing").delay(200).queue(function(){
+    $(".axh--navmenu").addClass("closing").delay(200).queue(function(){
     	$(this).removeClass("open closing").dequeue();
     });
   }  
-  //$(".ad--navmenu").toggleClass("open");
-  $(this).find(".ad--icon").text($(this).text() == '' ? '' : '');
+  //$(".axh--navmenu").toggleClass("open");
+  $(this).find(".axh--icon").text($(this).text() == '' ? '' : '');
 });
 /* Print */
 $(".btn-print").click(function() {
@@ -28,7 +28,7 @@ $(".btn-print").click(function() {
 });
 
 /* Read more */
-$(".ad--btn.read-more").click(function(e) {
+$(".axh--btn.read-more").click(function(e) {
 	e.preventDefault();
   oriText = "Read more"
   toggledText = "Read less"
