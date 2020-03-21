@@ -162,6 +162,9 @@ body {
     font-weight: 700;
     font-size: 18px;
 }
+.axh--stats-box .axh--p.p-desc {
+    display:none;
+}
 /* === Except Mobile === */
 @media (min-width: 479px) {
     .axh--stats-box.large .axh--bar-meter {
@@ -205,22 +208,22 @@ body {
 }
 /* === BAR LABEL COLOURS === */
 /* #1 YELLOW */
-.axh--stats-box[data-stats="1"] .axh--stats-value, .axh--stats-box[data-stats="1"] .axh--bar[data-bar="1"] > .axh--bar-label, .axh--summary-value[data-stats="1"] > div, .axh--bar-meter.meter-perc > .axh--bar[data-bar="1"] > .axh--bar-label {
+.axh--stats-box[data-stats="1"] .axh--p.p-desc, .axh--stats-box[data-stats="1"] .axh--stats-value, .axh--stats-box[data-stats="1"] .axh--bar[data-bar="1"] > .axh--bar-label, .axh--summary-value[data-stats="1"] > div, .axh--bar-meter.meter-perc > .axh--bar[data-bar="1"] > .axh--bar-label {
     color: #EBB154;
     opacity:1;
 }
 /* #2 GREEN */
-.axh--stats-box[data-stats="2"] .axh--stats-value, .axh--stats-box[data-stats="2"] .axh--bar[data-bar="2"] > .axh--bar-label, .axh--summary-value[data-stats="2"] > div, .axh--bar-meter.meter-perc > .axh--bar[data-bar="2"] > .axh--bar-label {
+.axh--stats-box[data-stats="2"] .axh--p.p-desc, .axh--stats-box[data-stats="2"] .axh--stats-value, .axh--stats-box[data-stats="2"] .axh--bar[data-bar="2"] > .axh--bar-label, .axh--summary-value[data-stats="2"] > div, .axh--bar-meter.meter-perc > .axh--bar[data-bar="2"] > .axh--bar-label {
     color: #5AE29E;
     opacity:1;
 }
 /* #3 RED */
-.axh--stats-box[data-stats="3"] .axh--stats-value, .axh--stats-box[data-stats="3"] .axh--bar[data-bar="3"] > .axh--bar-label, .axh--summary-value[data-stats="3"] > div, .axh--bar-meter.meter-perc > .axh--bar[data-bar="3"] > .axh--bar-label {
+.axh--stats-box[data-stats="3"] .axh--p.p-desc, .axh--stats-box[data-stats="3"] .axh--stats-value, .axh--stats-box[data-stats="3"] .axh--bar[data-bar="3"] > .axh--bar-label, .axh--summary-value[data-stats="3"] > div, .axh--bar-meter.meter-perc > .axh--bar[data-bar="3"] > .axh--bar-label {
     color: #F24F4F;
     opacity:1;
 }
 /* #4 BLUE */
-.axh--stats-box[data-stats="4"] .axh--stats-value, .axh--stats-box[data-stats="4"] .axh--bar[data-bar="4"] > .axh--bar-label, .axh--summary-value[data-stats="4"] > div, .axh--bar-meter.meter-perc > .axh--bar[data-bar="4"] > .axh--bar-label {
+.axh--stats-box[data-stats="4"] .axh--p.p-desc, .axh--stats-box[data-stats="4"] .axh--stats-value, .axh--stats-box[data-stats="4"] .axh--bar[data-bar="4"] > .axh--bar-label, .axh--summary-value[data-stats="4"] > div, .axh--bar-meter.meter-perc > .axh--bar[data-bar="4"] > .axh--bar-label {
     color: #21B1E6;
     opacity:1;
 }
@@ -368,7 +371,7 @@ ol.axh--ordered-table li.axh--ordered-list:before {
         display:none!important;
    }
     *[data-showprint="true"] {
-        display:block;
+        display:block!important;
    }
     * {
         color:black;
@@ -463,7 +466,6 @@ ol.axh--ordered-table li.axh--ordered-list:before {
         font-size:14px;
    }
     .axh--bar-meter {
-        margin-top:6px;
         height:3px;
    }
     .axh--food-source-list {
