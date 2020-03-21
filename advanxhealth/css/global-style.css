@@ -66,6 +66,25 @@ a {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+/* === Tick image === */
+.axh--checkbox img {
+    display:none;
+}
+.axh--checkbox:checked {
+    border-width:0px;
+    overflow:hidden;
+}
+.axh--checkbox:checked img {
+    display:block;
+}
+/* Simple checkbox */
+.axh--simplecheckbox {
+    font-size:16px;
+}
+.axh--simplecheckbox label {
+    display:inline-block;
+    margin-left:8px;
+}
 /* Start - Overide advanxhealth-dashboard.webflow.css */
 body {
     font-size:14px;
@@ -301,17 +320,6 @@ ol.axh--ordered-table li.axh--ordered-list:before {
     border-radius: 100%;
     background-color: #21b1e6;
     color: #fff;
-}
-/* === Tick image === */
-.axh--checkbox img {
-    display:none;
-}
-.axh--checkbox.w--redirected-checked {
-    border-width:0px;
-    overflow:hidden;
-}
-.axh--checkbox.w--redirected-checked img {
-    display:block;
 }
 /* === Desktop only === */
 @media (min-width: 991px) {
