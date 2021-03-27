@@ -5,7 +5,32 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Google Sheet CMS</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+  
+  <style>
+    .loader {
+      border: 2px solid #e9e9e9;
+      border-radius: 50%;
+      border-top: 2px solid #7e7e7e;
+      width: 20px;
+      height: 20px;
+      -webkit-animation: spin 1s linear infinite; /* Safari */
+      animation: spin 1s linear infinite;
+    }
+    
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
   <script>
     var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1VxoacvfL39jj32I0K8TeatApsY8ZLEi1O-Tv7KEqoWA/pubhtml';
 
@@ -15,16 +40,27 @@
                       simpleSheet: true } )
     }
 
+   $(document).ready(function() {
+    $(".cms-data").html("<div class='loader'></div>");
+   });
+
     function showInfo(data, tabletop) {
-      console.log('Successfully processed!');
-      console.log(data);
-      var gsheet = data;
+      gsheet = data;
+      if (gsheet != "") {
+        reflectData(gsheet, "desc1", "1");
+        reflectData(gsheet, "desc2", "2");
+      }
     }
 
-    window.addEventListener('DOMContentLoaded', init)
+    function reflectData(gsheet, elementID, rowID) {
+      $("#"+elementID).html(gsheet.find(x => x.id === rowID).desc);
+    }
+
+    window.addEventListener('DOMContentLoaded', init);
   </script>
 </head>
 <body>
-  <h1 id="desc"></h1>
+  <h1 class="cms-data" id="desc1">...</h1>
+  <h2 class="cms-data" id="desc2">...</h2>
 </body>
 </html>
